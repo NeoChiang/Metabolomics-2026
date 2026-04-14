@@ -92,15 +92,24 @@ for (m in mets) {
 
 # Drop metabolites with any NA (Mfuzz can't handle)
 clean_mat <- function(M) M[complete.cases(M), , drop = FALSE]
+dropped_mets <- function(M) rownames(M)[!complete.cases(M)]
 
-mats <- list(
-  GA_6pt      = clean_mat(mat_ga6),
-  GA_2pt      = clean_mat(mat_ga2),
-  BPD_6pt     = clean_mat(mat_bpd6),
-  BPD_2pt     = clean_mat(mat_bpd2),
-  Combined_12 = clean_mat(mat_12),
-  Combined_4  = clean_mat(mat_4)
+raw_mats <- list(
+  GA_6pt      = mat_ga6,
+  GA_2pt      = mat_ga2,
+  BPD_6pt     = mat_bpd6,
+  BPD_2pt     = mat_bpd2,
+  Combined_12 = mat_12,
+  Combined_4  = mat_4
 )
+mats <- lapply(raw_mats, clean_mat)
+
+cat("\n=== NA-dropped metabolites per tag ===\n")
+for (nm in names(raw_mats)) {
+  d <- dropped_mets(raw_mats[[nm]])
+  cat(sprintf("  %-12s: dropped %d  %s\n", nm, length(d),
+              if (length(d)) paste0("[", paste(d, collapse=", "), "]") else ""))
+}
 for (nm in names(mats)) cat(sprintf("  %-12s: %d metabolites x %d cols\n",
                                     nm, nrow(mats[[nm]]), ncol(mats[[nm]])))
 
@@ -121,9 +130,10 @@ run_mfuzz <- function(M, tag, k = 4) {
   mfrow <- c(ceiling(k_use/3), min(k_use, 3))
   mfuzz.plot2(eset_s, cl = cl, mfrow = mfrow,
               time.labels = colnames(M),
-              centre = TRUE, x11 = FALSE,
-              main = paste0("Mfuzz clusters - ", tag,
-                            "  (k=", k_use, ", m=", round(m_val, 2), ")"))
+              centre = TRUE, x11 = FALSE)
+  mtext(paste0("Mfuzz clusters - ", tag,
+               "  (k=", k_use, ", m=", round(m_val, 2), ")"),
+        side = 3, line = -1.5, outer = TRUE, cex = 1.1, font = 2)
   dev.off()
 
   # --- membership CSV ----

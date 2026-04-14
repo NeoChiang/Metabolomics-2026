@@ -267,21 +267,32 @@ build_table_docx <- function(group_var, group_levels, group_labels,
   # split data by group and timepoint
   data_by <- function(df, lvl) df[df[[group_var]] == lvl, , drop = FALSE]
 
-  # Data frame with 9 rows x 9 columns (Characteristics + 6 group-tp + 2 P)
-  ncols <- 1 + 2 * length(group_levels) + 2
-  body <- matrix("", nrow = length(row_spec), ncol = ncols)
+  # Column layout:
+  #   1                                           Characteristics
+  #   2..(1+K)                                    6M : one sub-col per group
+  #   (2+K)..(1+2K)                               2Y : one sub-col per group
+  #   (2+2K)                                      P (6M)
+  #   (3+2K)                                      P (2Y)
+  K     <- length(group_levels)
+  ncols <- 1 + 2 * K + 2
+  body      <- matrix("",    nrow = length(row_spec), ncol = ncols)
   bold_flag <- matrix(FALSE, nrow = length(row_spec), ncol = ncols)
+
+  col_6M_start <- 2
+  col_2Y_start <- 2 + K
+  col_P6       <- ncols - 1
+  col_P2       <- ncols
 
   for (i in seq_along(row_spec)) {
     spec <- row_spec[[i]]
     body[i, 1] <- spec$label
-    # per group summaries
+    # per group summaries — 6M columns first, then 2Y columns
     for (k in seq_along(group_levels)) {
       lvl <- group_levels[k]
       s6 <- data_by(d6, lvl)[[spec$var]]
       s2 <- data_by(d2, lvl)[[spec$var]]
-      col6 <- 1 + (k - 1) * 2 + 1   # 6M column for this group
-      col2 <- col6 + 1              # 2Y column for this group
+      col6 <- col_6M_start + (k - 1)
+      col2 <- col_2Y_start + (k - 1)
       if (spec$type == "cont") {
         body[i, col6] <- fmt_meanSD(s6)
         body[i, col2] <- fmt_meanSD(s2)
@@ -298,39 +309,46 @@ build_table_docx <- function(group_var, group_levels, group_labels,
     } else {
       p6 <- p_categorical(v6, g6); p2 <- p_categorical(v2, g2)
     }
-    body[i, ncols - 1] <- fmt_p(p6)
-    body[i, ncols    ] <- fmt_p(p2)
-    if (!is.na(p6) && p6 < 0.05) bold_flag[i, ncols - 1] <- TRUE
-    if (!is.na(p2) && p2 < 0.05) bold_flag[i, ncols    ] <- TRUE
+    body[i, col_P6] <- fmt_p(p6)
+    body[i, col_P2] <- fmt_p(p2)
+    if (!is.na(p6) && p6 < 0.05) bold_flag[i, col_P6] <- TRUE
+    if (!is.na(p2) && p2 < 0.05) bold_flag[i, col_P2] <- TRUE
   }
 
   # group n at each timepoint
   n6 <- sapply(group_levels, function(lvl) sum(d6[[group_var]] == lvl, na.rm = TRUE))
   n2 <- sapply(group_levels, function(lvl) sum(d2[[group_var]] == lvl, na.rm = TRUE))
 
-  # Build column names (level 2 sub-headers with n)
-  sub_hdr <- c("Characteristics")
-  for (k in seq_along(group_levels)) {
-    sub_hdr <- c(sub_hdr,
-                 sprintf("6M (n=%d)", n6[k]),
-                 sprintf("2Y (n=%d)", n2[k]))
-  }
-  sub_hdr <- c(sub_hdr, "P (6M)", "P (2Y)")
+  # Level-2 header (subgroup labels, with n)
+  sub_hdr <- c("Characteristics",
+               sprintf("%s (n=%d)", group_labels, n6),
+               sprintf("%s (n=%d)", group_labels, n2),
+               "P (6M)", "P (2Y)")
+
+  # Unique internal col_keys for flextable (display labels set via set_header_df)
+  col_keys <- c("char",
+                sprintf("c6M_%d", seq_len(K)),
+                sprintf("c2Y_%d", seq_len(K)),
+                "pval6", "pval2")
 
   df <- as.data.frame(body, stringsAsFactors = FALSE, check.names = FALSE)
-  names(df) <- sub_hdr
+  names(df) <- col_keys
 
   # ---------- flextable ----------
-  ft <- flextable(df)
+  ft <- flextable(df, col_keys = col_keys)
 
-  # Super-header
-  top_hdr <- c("Characteristics",
-               rep(group_labels[1], 2),
-               rep(group_labels[2], 2),
-               rep(group_labels[3], 2),
-               "P-value", "P-value")
-  ft <- add_header_row(ft, values = top_hdr, top = TRUE)
-  # Merge the top-row duplicates horizontally
+  # Two-row header:
+  #   row 1 (top): Characteristics | 6M (span K) | 2Y (span K) | P-value | P-value
+  #   row 2      :                 | subgroup labels x K       | subgroup x K | P (6M) | P (2Y)
+  hdr_df <- data.frame(
+    col_keys = col_keys,
+    top = c("Characteristics",
+            rep("6M", K), rep("2Y", K),
+            "P-value", "P-value"),
+    sub = sub_hdr,
+    stringsAsFactors = FALSE
+  )
+  ft <- set_header_df(ft, mapping = hdr_df, key = "col_keys")
   ft <- merge_h(ft, part = "header")
   ft <- merge_v(ft, j = 1, part = "header")   # first column label spans both rows
 
@@ -343,6 +361,11 @@ build_table_docx <- function(group_var, group_levels, group_labels,
   ft <- border_outer(ft, border = fp_border(color = "black", width = 1))
   ft <- border_inner_h(ft, border = fp_border(color = "grey60", width = 0.5))
   ft <- hline_bottom(ft, border = fp_border(color = "black", width = 1), part = "header")
+  # Vertical separator between 6M block, 2Y block, and P-value block
+  sep <- fp_border(color = "black", width = 0.8)
+  ft <- vline(ft, j = col_6M_start - 1, border = sep, part = "all")   # after Characteristics
+  ft <- vline(ft, j = col_2Y_start - 1, border = sep, part = "all")   # between 6M and 2Y
+  ft <- vline(ft, j = col_2Y_start + K - 1, border = sep, part = "all")  # before P-value
 
   # Bold cells where p < 0.05
   for (i in seq_len(nrow(bold_flag))) {

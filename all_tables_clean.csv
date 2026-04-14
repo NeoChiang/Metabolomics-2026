@@ -1,0 +1,229 @@
+﻿Metabolite,Chemical_shift,Timepoint,Grouping,Comparison,VIP,Fold_change,P
+N-Phenylacetylglycine,7.404-7.448(m),6M,GA,<28wk vs >=37wk,2.11,1.76,<0.001
+N-Phenylacetylglycine,7.404-7.448(m),6M,GA,28-32wk vs >=37wk,1.07,1.29,0.014
+N-Phenylacetylglycine,7.404-7.448(m),6M,GA,<28wk vs 28-32wk,2.13,1.37,0.004
+4-Hydroxyphenylacetate,6.855-6.883,6M,GA,<28wk vs >=37wk,1.66,1.55,<0.001
+4-Hydroxyphenylacetate,6.855-6.883,6M,GA,28-32wk vs >=37wk,0.77,1.27,0.091
+4-Hydroxyphenylacetate,6.855-6.883,6M,GA,<28wk vs 28-32wk,1.64,1.22,0.033
+Indoxyl sulfate,7.496-7.529,6M,GA,<28wk vs >=37wk,1.68,1.57,<0.001
+Indoxyl sulfate,7.496-7.529,6M,GA,28-32wk vs >=37wk,1.21,1.3,0.016
+Indoxyl sulfate,7.496-7.529,6M,GA,<28wk vs 28-32wk,1.13,1.21,0.181
+3-Methyl-2-oxovalerate,1.098-1.122(d),6M,GA,<28wk vs >=37wk,1.45,1.46,<0.001
+3-Methyl-2-oxovalerate,1.098-1.122(d),6M,GA,28-32wk vs >=37wk,0.93,1.32,0.052
+3-Methyl-2-oxovalerate,1.098-1.122(d),6M,GA,<28wk vs 28-32wk,1.03,1.1,0.182
+Acetylsalicylate,2.337-2.357(s),6M,GA,<28wk vs >=37wk,1.11,1.31,0.002
+Acetylsalicylate,2.337-2.357(s),6M,GA,28-32wk vs >=37wk,0.54,1.17,0.171
+Acetylsalicylate,2.337-2.357(s),6M,GA,<28wk vs 28-32wk,0.97,1.12,0.156
+1-Methylnicotinamide,9.245-9.320,6M,GA,<28wk vs >=37wk,1.32,1.53,0.003
+1-Methylnicotinamide,9.245-9.320,6M,GA,28-32wk vs >=37wk,0.82,1.36,0.108
+1-Methylnicotinamide,9.245-9.320,6M,GA,<28wk vs 28-32wk,0.88,1.12,0.318
+Creatine,3.029-3.044,6M,GA,<28wk vs >=37wk,1.43,1.35,0.005
+Creatine,3.029-3.044,6M,GA,28-32wk vs >=37wk,0.77,1.11,0.166
+Creatine,3.029-3.044,6M,GA,<28wk vs 28-32wk,1.35,1.22,0.113
+Hippurate,7.529-7.580,6M,GA,<28wk vs >=37wk,1.31,1.48,0.006
+Hippurate,7.529-7.580,6M,GA,28-32wk vs >=37wk,0.55,1.15,0.256
+Hippurate,7.529-7.580,6M,GA,<28wk vs 28-32wk,1.45,1.28,0.083
+2-Hydroxyisobutyrate,1.355-1.375,6M,GA,<28wk vs >=37wk,0.74,1.16,0.009
+2-Hydroxyisobutyrate,1.355-1.375,6M,GA,28-32wk vs >=37wk,0.58,1.18,0.089
+2-Hydroxyisobutyrate,1.355-1.375,6M,GA,<28wk vs 28-32wk,0.24,0.98,0.676
+"N,N-Dimethylglycine",2.920-2.938,6M,GA,<28wk vs >=37wk,1.1,0.87,0.011
+"N,N-Dimethylglycine",2.920-2.938,6M,GA,28-32wk vs >=37wk,0.85,0.9,0.058
+"N,N-Dimethylglycine",2.920-2.938,6M,GA,<28wk vs 28-32wk,0.59,0.97,0.473
+Trigonelline,8.809-8.868,6M,GA,<28wk vs >=37wk,1.21,1.13,0.016
+Trigonelline,8.809-8.868,6M,GA,28-32wk vs >=37wk,1.01,1.04,0.059
+Trigonelline,8.809-8.868,6M,GA,<28wk vs 28-32wk,0.57,1.09,0.494
+Tyrosine,6.890-6.915(ddd),6M,GA,<28wk vs >=37wk,0.85,1.19,0.017
+Tyrosine,6.890-6.915(ddd),6M,GA,28-32wk vs >=37wk,0.2,1.05,0.605
+Tyrosine,6.890-6.915(ddd),6M,GA,<28wk vs 28-32wk,1.14,1.13,0.073
+Valine,1.045-1.057,6M,GA,<28wk vs >=37wk,0.85,1.18,0.021
+Valine,1.045-1.057,6M,GA,28-32wk vs >=37wk,0.41,1.18,0.359
+Valine,1.045-1.057,6M,GA,<28wk vs 28-32wk,0.71,1.0,0.318
+Sucrose,6.405-6.423,6M,GA,<28wk vs >=37wk,2.33,1.56,0.028
+Sucrose,6.405-6.423,6M,GA,28-32wk vs >=37wk,2.46,1.32,0.026
+Sucrose,6.405-6.423,6M,GA,<28wk vs 28-32wk,0.61,1.19,0.442
+Pantothenic acid,0.928-0.940,6M,GA,<28wk vs >=37wk,0.7,1.18,0.032
+Pantothenic acid,0.928-0.940,6M,GA,28-32wk vs >=37wk,0.41,1.11,0.258
+Pantothenic acid,0.928-0.940,6M,GA,<28wk vs 28-32wk,0.5,1.06,0.429
+trans-Aconitate,6.514-6.535,6M,GA,<28wk vs >=37wk,2.07,1.46,0.054
+trans-Aconitate,6.514-6.535,6M,GA,28-32wk vs >=37wk,2.26,1.29,0.043
+trans-Aconitate,6.514-6.535,6M,GA,<28wk vs 28-32wk,0.27,1.13,0.735
+N-Phenylacetylglycine,7.404-7.448(m),2Y,GA,<28wk vs >=37wk,2.06,1.82,<0.001
+N-Phenylacetylglycine,7.404-7.448(m),2Y,GA,28-32wk vs >=37wk,0.97,1.3,0.070
+N-Phenylacetylglycine,7.404-7.448(m),2Y,GA,<28wk vs 28-32wk,1.12,1.4,0.019
+Indoxyl sulfate,7.496-7.529(d),2Y,GA,<28wk vs >=37wk,2.14,1.73,<0.001
+Indoxyl sulfate,7.496-7.529(d),2Y,GA,28-32wk vs >=37wk,0.29,1.25,0.709
+Indoxyl sulfate,7.496-7.529(d),2Y,GA,<28wk vs 28-32wk,1.9,1.38,0.004
+Glutamine,2.431-2.461,2Y,GA,<28wk vs >=37wk,0.99,1.18,0.005
+Glutamine,2.431-2.461,2Y,GA,28-32wk vs >=37wk,0.08,1.05,0.846
+Glutamine,2.431-2.461,2Y,GA,<28wk vs 28-32wk,0.69,1.13,0.025
+Succinate,2.400-2.418(t),2Y,GA,<28wk vs >=37wk,1.15,1.56,0.009
+Succinate,2.400-2.418(t),2Y,GA,28-32wk vs >=37wk,0.59,1.1,0.159
+Succinate,2.400-2.418(t),2Y,GA,<28wk vs 28-32wk,0.59,1.42,0.110
+Pantothenic acid,0.928-0.940,2Y,GA,<28wk vs >=37wk,0.92,1.27,0.015
+Pantothenic acid,0.928-0.940,2Y,GA,28-32wk vs >=37wk,0.58,1.11,0.136
+Pantothenic acid,0.928-0.940,2Y,GA,<28wk vs 28-32wk,0.49,1.15,0.264
+Acetylsalicylate,2.337-2.357(s),2Y,GA,<28wk vs >=37wk,1.2,1.48,0.017
+Acetylsalicylate,2.337-2.357(s),2Y,GA,28-32wk vs >=37wk,1.36,1.32,0.010
+Acetylsalicylate,2.337-2.357(s),2Y,GA,<28wk vs 28-32wk,0.12,1.13,0.894
+Taurine,3.413-3.446,2Y,GA,<28wk vs >=37wk,1.24,1.32,0.028
+Taurine,3.413-3.446,2Y,GA,28-32wk vs >=37wk,0.04,0.95,0.952
+Taurine,3.413-3.446,2Y,GA,<28wk vs 28-32wk,1.16,1.39,0.018
+Gluconate,4.636-4.660,2Y,GA,<28wk vs >=37wk,0.89,1.22,0.035
+Gluconate,4.636-4.660,2Y,GA,28-32wk vs >=37wk,0.03,1.01,0.954
+Gluconate,4.636-4.660,2Y,GA,<28wk vs 28-32wk,0.82,1.21,0.046
+Glycine,3.563-3.578(s),2Y,GA,<28wk vs >=37wk,0.56,0.84,0.276
+Glycine,3.563-3.578(s),2Y,GA,28-32wk vs >=37wk,1.96,0.62,<0.001
+Glycine,3.563-3.578(s),2Y,GA,<28wk vs 28-32wk,1.1,1.36,0.013
+Sucrose,6.405-6.423,2Y,GA,<28wk vs >=37wk,2.58,0.66,0.137
+Sucrose,6.405-6.423,2Y,GA,28-32wk vs >=37wk,4.95,0.85,0.006
+Sucrose,6.405-6.423,2Y,GA,<28wk vs 28-32wk,2.39,0.78,0.193
+Tyrosine,6.890-6.915(ddd),2Y,GA,<28wk vs >=37wk,0.41,1.13,0.356
+Tyrosine,6.890-6.915(ddd),2Y,GA,28-32wk vs >=37wk,1.04,0.83,0.032
+Tyrosine,6.890-6.915(ddd),2Y,GA,<28wk vs 28-32wk,1.07,1.36,0.004
+N6-Acetyllysine,1.975-2.004,2Y,GA,<28wk vs >=37wk,0.67,1.26,0.540
+N6-Acetyllysine,1.975-2.004,2Y,GA,28-32wk vs >=37wk,1.16,1.3,0.033
+N6-Acetyllysine,1.975-2.004,2Y,GA,<28wk vs 28-32wk,1.2,0.97,0.317
+Formate,8.452-8.475,2Y,GA,<28wk vs >=37wk,0.59,0.91,0.282
+Formate,8.452-8.475,2Y,GA,28-32wk vs >=37wk,1.58,0.76,0.038
+Formate,8.452-8.475,2Y,GA,<28wk vs 28-32wk,0.87,1.2,0.197
+1-Methylnicotinamide,9.245-9.320,2Y,GA,<28wk vs >=37wk,0.81,1.27,0.168
+1-Methylnicotinamide,9.245-9.320,2Y,GA,28-32wk vs >=37wk,1.33,1.44,0.043
+1-Methylnicotinamide,9.245-9.320,2Y,GA,<28wk vs 28-32wk,0.64,0.88,0.540
+Alanine,1.470-1.500,2Y,GA,<28wk vs >=37wk,0.82,1.18,0.117
+Alanine,1.470-1.500,2Y,GA,28-32wk vs >=37wk,0.7,0.82,0.218
+Alanine,1.470-1.500,2Y,GA,<28wk vs 28-32wk,1.32,1.44,0.002
+3-Methyl-2-oxovalerate,1.098-1.122(d),2Y,GA,<28wk vs >=37wk,0.88,1.18,0.065
+3-Methyl-2-oxovalerate,1.098-1.122(d),2Y,GA,28-32wk vs >=37wk,0.0,0.93,0.998
+3-Methyl-2-oxovalerate,1.098-1.122(d),2Y,GA,<28wk vs 28-32wk,0.76,1.27,0.037
+4-Hydroxyphenylacetate,6.855-6.883,2Y,GA,<28wk vs >=37wk,0.5,1.13,0.292
+4-Hydroxyphenylacetate,6.855-6.883,2Y,GA,28-32wk vs >=37wk,0.55,0.89,0.290
+4-Hydroxyphenylacetate,6.855-6.883,2Y,GA,<28wk vs 28-32wk,0.78,1.27,0.042
+Lactate,1.326-1.336,2Y,GA,<28wk vs >=37wk,0.43,1.08,0.276
+Lactate,1.326-1.336,2Y,GA,28-32wk vs >=37wk,0.47,0.95,0.311
+Lactate,1.326-1.336,2Y,GA,<28wk vs 28-32wk,0.68,1.14,0.046
+N-Phenylacetylglycine,7.404-7.448(m),6M,BPD,M+S vs HC,1.87,1.67,<0.001
+N-Phenylacetylglycine,7.404-7.448(m),6M,BPD,No+Mild vs HC,1.26,1.3,0.016
+N-Phenylacetylglycine,7.404-7.448(m),6M,BPD,M+S vs No+Mild,1.33,1.28,0.027
+3-Methyl-2-oxovalerate,1.098-1.122(d),6M,BPD,M+S vs HC,1.67,1.66,<0.001
+3-Methyl-2-oxovalerate,1.098-1.122(d),6M,BPD,No+Mild vs HC,0.4,1.05,0.388
+3-Methyl-2-oxovalerate,1.098-1.122(d),6M,BPD,M+S vs No+Mild,1.97,1.59,0.001
+4-Hydroxyphenylacetate,6.855-6.883,6M,BPD,M+S vs HC,1.57,1.58,<0.001
+4-Hydroxyphenylacetate,6.855-6.883,6M,BPD,No+Mild vs HC,0.8,1.18,0.188
+4-Hydroxyphenylacetate,6.855-6.883,6M,BPD,M+S vs No+Mild,1.5,1.34,0.015
+Acetylsalicylate,2.337-2.357(s),6M,BPD,M+S vs HC,1.21,1.38,<0.001
+Acetylsalicylate,2.337-2.357(s),6M,BPD,No+Mild vs HC,0.58,1.07,0.605
+Acetylsalicylate,2.337-2.357(s),6M,BPD,M+S vs No+Mild,1.4,1.29,0.011
+Indoxyl sulfate,7.496-7.529(d),6M,BPD,M+S vs HC,1.59,1.59,<0.001
+Indoxyl sulfate,7.496-7.529(d),6M,BPD,No+Mild vs HC,1.56,1.22,0.026
+Indoxyl sulfate,7.496-7.529(d),6M,BPD,M+S vs No+Mild,0.95,1.3,0.162
+1-Methylnicotinamide,9.245-9.320,6M,BPD,M+S vs HC,1.4,1.57,0.001
+1-Methylnicotinamide,9.245-9.320,6M,BPD,No+Mild vs HC,1.24,1.28,0.285
+1-Methylnicotinamide,9.245-9.320,6M,BPD,M+S vs No+Mild,1.15,1.23,0.106
+2-Hydroxyisobutyrate,1.355-1.375,6M,BPD,M+S vs HC,0.96,1.29,0.001
+2-Hydroxyisobutyrate,1.355-1.375,6M,BPD,No+Mild vs HC,0.32,1.03,0.676
+2-Hydroxyisobutyrate,1.355-1.375,6M,BPD,M+S vs No+Mild,1.19,1.25,0.010
+Pantothenic acid,0.928-0.940,6M,BPD,M+S vs HC,0.91,1.24,0.003
+Pantothenic acid,0.928-0.940,6M,BPD,No+Mild vs HC,0.22,1.03,0.956
+Pantothenic acid,0.928-0.940,6M,BPD,M+S vs No+Mild,1.18,1.2,0.019
+"N,N-Dimethylglycine",2.920-2.938,6M,BPD,M+S vs HC,1.07,0.84,0.007
+"N,N-Dimethylglycine",2.920-2.938,6M,BPD,No+Mild vs HC,0.75,0.93,0.093
+"N,N-Dimethylglycine",2.920-2.938,6M,BPD,M+S vs No+Mild,0.46,0.91,0.492
+Creatine,3.029-3.044,6M,BPD,M+S vs HC,1.27,1.31,0.009
+Creatine,3.029-3.044,6M,BPD,No+Mild vs HC,0.57,1.12,0.172
+Creatine,3.029-3.044,6M,BPD,M+S vs No+Mild,0.84,1.17,0.226
+Hippurate,7.529-7.580,6M,BPD,M+S vs HC,1.16,1.48,0.011
+Hippurate,7.529-7.580,6M,BPD,No+Mild vs HC,0.58,1.09,0.276
+Hippurate,7.529-7.580,6M,BPD,M+S vs No+Mild,1.02,1.35,0.131
+Valine,1.045-1.057,6M,BPD,M+S vs HC,0.88,1.2,0.012
+Valine,1.045-1.057,6M,BPD,No+Mild vs HC,0.49,1.16,0.567
+Valine,1.045-1.057,6M,BPD,M+S vs No+Mild,0.8,1.04,0.163
+3-Hydroxyisobutyrate,1.064-1.090,6M,BPD,M+S vs HC,0.77,1.29,0.022
+3-Hydroxyisobutyrate,1.064-1.090,6M,BPD,No+Mild vs HC,0.14,1.03,0.862
+3-Hydroxyisobutyrate,1.064-1.090,6M,BPD,M+S vs No+Mild,1.11,1.25,0.037
+Sucrose,6.405-6.423,6M,BPD,M+S vs HC,2.2,1.42,0.024
+Sucrose,6.405-6.423,6M,BPD,No+Mild vs HC,1.62,1.44,0.030
+Sucrose,6.405-6.423,6M,BPD,M+S vs No+Mild,0.43,0.98,0.501
+N-Acetylaspartate,2.018-2.030,6M,BPD,M+S vs HC,0.56,1.12,0.029
+N-Acetylaspartate,2.018-2.030,6M,BPD,No+Mild vs HC,0.27,0.97,0.259
+N-Acetylaspartate,2.018-2.030,6M,BPD,M+S vs No+Mild,1.1,1.16,0.014
+Glutamine,2.431-2.461,6M,BPD,M+S vs HC,0.6,1.16,0.037
+Glutamine,2.431-2.461,6M,BPD,No+Mild vs HC,0.33,0.96,0.230
+Glutamine,2.431-2.461,6M,BPD,M+S vs No+Mild,1.23,1.2,0.013
+trans-Aconitate,6.514-6.535,6M,BPD,M+S vs HC,2.03,1.39,0.040
+trans-Aconitate,6.514-6.535,6M,BPD,No+Mild vs HC,1.51,1.35,0.059
+trans-Aconitate,6.514-6.535,6M,BPD,M+S vs No+Mild,0.1,1.03,0.875
+Acetate,1.919-1.932,6M,BPD,M+S vs HC,0.84,1.53,0.040
+Acetate,1.919-1.932,6M,BPD,No+Mild vs HC,0.29,1.06,0.666
+Acetate,1.919-1.932,6M,BPD,M+S vs No+Mild,1.38,1.45,0.033
+Succinate,2.400-2.418(t),6M,BPD,M+S vs HC,0.69,1.22,0.042
+Succinate,2.400-2.418(t),6M,BPD,No+Mild vs HC,0.18,1.08,0.761
+Succinate,2.400-2.418(t),6M,BPD,M+S vs No+Mild,0.73,1.13,0.200
+Gluconate,4.636-4.660,6M,BPD,M+S vs HC,0.76,1.46,0.042
+Gluconate,4.636-4.660,6M,BPD,No+Mild vs HC,0.25,0.93,0.330
+Gluconate,4.636-4.660,6M,BPD,M+S vs No+Mild,1.47,1.57,0.012
+Trigonelline,8.809-8.868,6M,BPD,M+S vs HC,0.94,1.04,0.045
+Trigonelline,8.809-8.868,6M,BPD,No+Mild vs HC,1.57,1.12,0.022
+Trigonelline,8.809-8.868,6M,BPD,M+S vs No+Mild,0.31,0.93,0.638
+Tyrosine,6.890-6.915(ddd),6M,BPD,M+S vs HC,0.68,1.15,0.046
+Tyrosine,6.890-6.915(ddd),6M,BPD,No+Mild vs HC,0.39,1.06,0.515
+Tyrosine,6.890-6.915(ddd),6M,BPD,M+S vs No+Mild,0.61,1.09,0.234
+2-Methylglutarate,1.057-1.064,6M,BPD,M+S vs HC,0.67,1.24,0.048
+2-Methylglutarate,1.057-1.064,6M,BPD,No+Mild vs HC,0.2,1.07,0.916
+2-Methylglutarate,1.057-1.064,6M,BPD,M+S vs No+Mild,0.85,1.17,0.123
+3-Aminoisobutyric acid,3.086-3.100,6M,BPD,M+S vs HC,0.69,1.18,0.049
+3-Aminoisobutyric acid,3.086-3.100,6M,BPD,No+Mild vs HC,0.92,1.2,0.222
+3-Aminoisobutyric acid,3.086-3.100,6M,BPD,M+S vs No+Mild,0.22,0.98,0.697
+Trimethylamine,2.896-2.910,6M,BPD,M+S vs HC,0.23,1.07,0.462
+Trimethylamine,2.896-2.910,6M,BPD,No+Mild vs HC,1.29,0.8,0.001
+Trimethylamine,2.896-2.910,6M,BPD,M+S vs No+Mild,1.81,1.34,0.000
+Citramalic acid,2.228-2.244,6M,BPD,M+S vs HC,0.14,1.04,0.658
+Citramalic acid,2.228-2.244,6M,BPD,No+Mild vs HC,0.8,0.84,0.016
+Citramalic acid,2.228-2.244,6M,BPD,M+S vs No+Mild,1.35,1.23,0.008
+Citrate,2.656-2.691,6M,BPD,M+S vs HC,0.05,1.15,0.908
+Citrate,2.656-2.691,6M,BPD,No+Mild vs HC,1.0,0.9,0.040
+Citrate,2.656-2.691,6M,BPD,M+S vs No+Mild,1.13,1.28,0.136
+Lysine,1.694-1.768,6M,BPD,M+S vs HC,0.48,1.08,0.128
+Lysine,1.694-1.768,6M,BPD,No+Mild vs HC,0.54,0.9,0.178
+Lysine,1.694-1.768,6M,BPD,M+S vs No+Mild,1.29,1.21,0.005
+Methylguanidine,2.816-2.851,6M,BPD,M+S vs HC,0.41,1.08,0.102
+Methylguanidine,2.816-2.851,6M,BPD,No+Mild vs HC,0.36,0.94,0.093
+Methylguanidine,2.816-2.851,6M,BPD,M+S vs No+Mild,1.17,1.15,0.005
+2-Aminobutyrate,0.979-0.993,6M,BPD,M+S vs HC,0.3,1.1,0.338
+2-Aminobutyrate,0.979-0.993,6M,BPD,No+Mild vs HC,0.59,0.9,0.080
+2-Aminobutyrate,0.979-0.993,6M,BPD,M+S vs No+Mild,1.16,1.22,0.022
+N-Phenylacetylglycine,7.404-7.448(m),2Y,BPD,M+S vs HC,1.76,1.73,<0.001
+N-Phenylacetylglycine,7.404-7.448(m),2Y,BPD,No+Mild vs HC,1.33,1.31,0.070
+N-Phenylacetylglycine,7.404-7.448(m),2Y,BPD,M+S vs No+Mild,0.85,1.32,0.062
+Acetylsalicylate,2.337-2.357(s),2Y,BPD,M+S vs HC,1.32,1.53,0.004
+Acetylsalicylate,2.337-2.357(s),2Y,BPD,No+Mild vs HC,1.04,1.22,0.066
+Acetylsalicylate,2.337-2.357(s),2Y,BPD,M+S vs No+Mild,0.55,1.25,0.265
+Succinate,2.400-2.418(t),2Y,BPD,M+S vs HC,1.1,1.52,0.006
+Succinate,2.400-2.418(t),2Y,BPD,No+Mild vs HC,0.54,1.06,0.360
+Succinate,2.400-2.418(t),2Y,BPD,M+S vs No+Mild,0.69,1.44,0.057
+Indoxyl sulfate,7.496-7.529(d),2Y,BPD,M+S vs HC,1.56,1.6,0.009
+Indoxyl sulfate,7.496-7.529(d),2Y,BPD,No+Mild vs HC,0.58,1.34,0.460
+Indoxyl sulfate,7.496-7.529(d),2Y,BPD,M+S vs No+Mild,0.99,1.19,0.089
+Glutamine,2.431-2.461,2Y,BPD,M+S vs HC,0.86,1.21,0.011
+Glutamine,2.431-2.461,2Y,BPD,No+Mild vs HC,0.26,0.99,0.864
+Glutamine,2.431-2.461,2Y,BPD,M+S vs No+Mild,0.79,1.22,0.012
+Pantothenic acid,0.928-0.940,2Y,BPD,M+S vs HC,0.87,1.28,0.013
+Pantothenic acid,0.928-0.940,2Y,BPD,No+Mild vs HC,0.72,1.06,0.235
+Pantothenic acid,0.928-0.940,2Y,BPD,M+S vs No+Mild,0.46,1.2,0.148
+Propylene glycol,1.120-1.146,2Y,BPD,M+S vs HC,4.76,0.9,0.019
+Propylene glycol,1.120-1.146,2Y,BPD,No+Mild vs HC,0.41,0.66,0.935
+Propylene glycol,1.120-1.146,2Y,BPD,M+S vs No+Mild,4.43,1.37,0.033
+Glycine,3.563-3.578(s),2Y,BPD,M+S vs HC,0.93,0.77,0.050
+Glycine,3.563-3.578(s),2Y,BPD,No+Mild vs HC,1.9,0.67,0.009
+Glycine,3.563-3.578(s),2Y,BPD,M+S vs No+Mild,0.34,1.14,0.416
+Sucrose,6.405-6.423,2Y,BPD,M+S vs HC,2.82,0.62,0.077
+Sucrose,6.405-6.423,2Y,BPD,No+Mild vs HC,3.89,0.94,0.011
+Sucrose,6.405-6.423,2Y,BPD,M+S vs No+Mild,1.66,0.66,0.297
+Citrate,2.656-2.691,2Y,BPD,M+S vs HC,0.82,1.24,0.119
+Citrate,2.656-2.691,2Y,BPD,No+Mild vs HC,0.8,0.9,0.163
+Citrate,2.656-2.691,2Y,BPD,M+S vs No+Mild,1.48,1.38,0.007
+3-Methyl-2-oxovalerate,1.098-1.122(d),2Y,BPD,M+S vs HC,0.81,1.17,0.058
+3-Methyl-2-oxovalerate,1.098-1.122(d),2Y,BPD,No+Mild vs HC,0.15,0.9,0.757
+3-Methyl-2-oxovalerate,1.098-1.122(d),2Y,BPD,M+S vs No+Mild,1.02,1.31,0.018
+2-Aminobutyrate,0.979-0.993,2Y,BPD,M+S vs HC,0.61,1.14,0.066
+2-Aminobutyrate,0.979-0.993,2Y,BPD,No+Mild vs HC,0.24,0.97,0.669
+2-Aminobutyrate,0.979-0.993,2Y,BPD,M+S vs No+Mild,0.62,1.17,0.038

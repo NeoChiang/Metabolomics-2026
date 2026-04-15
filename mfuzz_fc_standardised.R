@@ -29,8 +29,11 @@ sig_mets <- unique(clean$Metabolite[as.numeric(sub("<", "", clean$P)) < 0.05])
 cat("Significant metabolites (union):", length(sig_mets), "\n")
 
 # ---- 2. raw Excel ---------------------------------------------------------
-raw <- read.xlsx("urine_data.xlsx", sheet = 1, startRow = 1, colNames = TRUE)
-raw <- raw[-1, ]
+# Read with colNames=FALSE to preserve original names (avoid make.names mangling)
+raw_all <- read.xlsx("urine_data.xlsx", sheet = 1, startRow = 1, colNames = FALSE)
+original_header <- as.character(raw_all[1, ])        # row 1 = metabolite names
+colnames(raw_all) <- original_header
+raw <- raw_all[-c(1, 2), ]                           # drop header + chem-shift row
 raw$Age       <- as.character(raw$Age)
 raw$GA3Group  <- as.integer(raw$GA3Group)
 raw$BPD3Group <- as.integer(raw$BPD3Group)
@@ -65,19 +68,14 @@ for (m in mets) {
 }
 combined_fc <- cbind(ga_fc, bpd_fc)
 
-clean_mat    <- function(M) M[complete.cases(M), , drop = FALSE]
-dropped_mets <- function(M) rownames(M)[!complete.cases(M)]
-
-raw_mats <- list(FC_GA_std = ga_fc, FC_BPD_std = bpd_fc, FC_Combined_std = combined_fc)
-mats     <- lapply(raw_mats, clean_mat)
-
-cat("\n=== Dropped metabolites (any NA in row) per tag ===\n")
-for (nm in names(raw_mats)) {
-  d <- dropped_mets(raw_mats[[nm]])
-  cat(sprintf("  %-18s: kept %d / dropped %d %s\n",
-              nm, nrow(mats[[nm]]), length(d),
-              if (length(d)) paste0("[", paste(d, collapse=", "), "]") else ""))
-}
+clean_mat <- function(M) M[complete.cases(M), , drop = FALSE]
+mats <- list(
+  FC_GA_std       = clean_mat(ga_fc),
+  FC_BPD_std      = clean_mat(bpd_fc),
+  FC_Combined_std = clean_mat(combined_fc)
+)
+for (nm in names(mats))
+  cat(sprintf("  %-18s: %d metabolites x %d dims\n", nm, nrow(mats[[nm]]), ncol(mats[[nm]])))
 
 # ---- 5. run Mfuzz WITH standardise ----------------------------------------
 run_fc_mfuzz_std <- function(M, tag, k) {

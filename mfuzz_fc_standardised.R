@@ -29,8 +29,11 @@ sig_mets <- unique(clean$Metabolite[as.numeric(sub("<", "", clean$P)) < 0.05])
 cat("Significant metabolites (union):", length(sig_mets), "\n")
 
 # ---- 2. raw Excel ---------------------------------------------------------
-raw <- read.xlsx("urine_data.xlsx", sheet = 1, startRow = 1, colNames = TRUE)
-raw <- raw[-1, ]
+# Read with colNames=FALSE to preserve original names (avoid make.names mangling)
+raw_all <- read.xlsx("urine_data.xlsx", sheet = 1, startRow = 1, colNames = FALSE)
+original_header <- as.character(raw_all[1, ])        # row 1 = metabolite names
+colnames(raw_all) <- original_header
+raw <- raw_all[-c(1, 2), ]                           # drop header + chem-shift row
 raw$Age       <- as.character(raw$Age)
 raw$GA3Group  <- as.integer(raw$GA3Group)
 raw$BPD3Group <- as.integer(raw$BPD3Group)

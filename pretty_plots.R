@@ -36,6 +36,15 @@ load_membership <- function(csv_path, x_levels) {
   # max membership per metabolite (used as line alpha)
   df$MaxMemb <- apply(df[, cluster_cols, drop = FALSE], 1, max)
 
+  # ── Row-wise standardisation (same as Mfuzz standardise()) ──
+  # Each metabolite: (value - row_mean) / row_sd
+  val_mat <- as.matrix(df[, value_cols])
+  row_means <- rowMeans(val_mat, na.rm = TRUE)
+  row_sds   <- apply(val_mat, 1, sd, na.rm = TRUE)
+  row_sds[row_sds == 0] <- 1  # prevent division by zero
+  val_mat_std <- (val_mat - row_means) / row_sds
+  df[, value_cols] <- as.data.frame(val_mat_std)
+
   long <- df %>%
     select(Metabolite, HardCluster, MaxMemb, all_of(value_cols)) %>%
     pivot_longer(cols = all_of(value_cols),

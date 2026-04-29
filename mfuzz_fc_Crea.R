@@ -97,9 +97,11 @@ run_fc_mfuzz <- function(M, tag, k) {
   k_use <- min(k, nrow(M) - 1)
   cl <- mfuzz(eset, c = k_use, m = m_val)
 
-  pdf(paste0("mfuzz_", tag, ".pdf"), width = 11, height = 7)
-  mfrow <- c(ceiling(k_use/3), min(k_use, 3))
-  mfuzz.plot2(eset, cl = cl, mfrow = mfrow, time.labels = colnames(M),
+  nc <- min(k_use, 3); nr <- ceiling(k_use / nc)
+  sq <- 4.5
+  pdf(paste0("mfuzz_", tag, ".pdf"), width = nc * sq + 1, height = nr * sq + 0.8)
+  par(pty = "s")
+  mfuzz.plot2(eset, cl = cl, mfrow = c(nr, nc), time.labels = colnames(M),
               centre = TRUE, x11 = FALSE, ylab = "log2(2Y / 6M)")
   abline(h = 0, lty = 2, col = "grey40")
   mtext(paste0("Mfuzz log2-FC (Crea-norm) - ", tag,
@@ -130,9 +132,11 @@ run_fc_mfuzz_std <- function(M, tag, k) {
   k_use <- min(k, nrow(M) - 1)
   cl <- mfuzz(eset_s, c = k_use, m = m_val)
 
-  pdf(paste0("mfuzz_", tag, ".pdf"), width = 11, height = 7)
-  mfrow <- c(ceiling(k_use/3), min(k_use, 3))
-  mfuzz.plot2(eset_s, cl = cl, mfrow = mfrow, time.labels = colnames(M),
+  nc <- min(k_use, 3); nr <- ceiling(k_use / nc)
+  sq <- 4.5
+  pdf(paste0("mfuzz_", tag, ".pdf"), width = nc * sq + 1, height = nr * sq + 0.8)
+  par(pty = "s")
+  mfuzz.plot2(eset_s, cl = cl, mfrow = c(nr, nc), time.labels = colnames(M),
               centre = TRUE, x11 = FALSE, ylab = "Standardised log2-FC")
   mtext(paste0("Mfuzz log2-FC (std, Crea-norm) - ", tag,
                "  (k=", k_use, ", m=", round(m_val, 2), ", n=", nrow(M), ")"),
@@ -212,7 +216,8 @@ plot_styleA <- function(long, k, title) {
     scale_colour_gradientn(colours = mfuzz_palette, limits = c(0, 1), name = "Membership") +
     labs(title = title, x = "Group", y = "Standardised log2(2Y / 6M)") +
     theme_minimal(base_size = 11) +
-    theme(panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(),
+    theme(aspect.ratio = 1,
+          panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(),
           strip.text = element_text(face = "bold", size = 12),
           axis.text.x = element_text(angle = 30, hjust = 1),
           legend.position = "right", plot.title = element_text(face = "bold"))
@@ -234,7 +239,8 @@ plot_styleB <- function(long, k, top_lists, title) {
                labeller = labeller(HardCluster = function(x) paste("Cluster", x))) +
     labs(title = title, x = "Group", y = "Standardised log2(2Y / 6M)") +
     theme_minimal(base_size = 11) +
-    theme(panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(),
+    theme(aspect.ratio = 1,
+          panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(),
           strip.text = element_text(face = "bold", size = 12),
           axis.text.x = element_text(angle = 30, hjust = 1),
           plot.title = element_text(face = "bold"))
@@ -274,8 +280,11 @@ for (cfg in pretty_configs) {
   top_lists <- top_per_cluster(cfg$file, n = 8)
   pA <- plot_styleA(loaded$long, loaded$k, cfg$title)
   pB <- plot_styleB(loaded$long, loaded$k, top_lists, cfg$title)
-  ggsave(paste0("pretty_", cfg$tag, "_styleA.pdf"), plot = pA, width = 11, height = 5.5)
-  ggsave(paste0("pretty_", cfg$tag, "_styleB.pdf"), plot = pB, width = 11, height = 7.5)
+  nc <- min(loaded$k, 3); nr <- ceiling(loaded$k / nc)
+  w_A <- nc * 4.5 + 2; h_A <- nr * 4.5 + 1.2
+  w_B <- nc * 4.5 + 1; h_B <- nr * 4.5 + nr * 2.5 + 1
+  ggsave(paste0("pretty_", cfg$tag, "_styleA.pdf"), plot = pA, width = w_A, height = h_A)
+  ggsave(paste0("pretty_", cfg$tag, "_styleB.pdf"), plot = pB, width = w_B, height = h_B)
   cat("  -> pretty_", cfg$tag, "_styleA.pdf + _styleB.pdf\n", sep = "")
 }
 

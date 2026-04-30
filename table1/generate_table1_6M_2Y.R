@@ -9,9 +9,9 @@
 #
 #  Cohort
 #  ------
-#      Each timepoint uses its OWN sample list independently:
-#        6M  -> all cases in Blood_Urine sheet  (n ~ 139)
-#        2Y  -> all cases in 収案名單 sheet     (n ~ 206)
+#      Each timepoint is filtered by "sample list.xlsx" in the table1/ folder:
+#        6M  -> column "6m" (n = 139)
+#        2Y  -> column "2y" (n = 115)
 #      Group sizes therefore differ between 6M and 2Y columns.
 #
 #  Data sources
@@ -124,7 +124,17 @@ d2$BF_ge6 <- ifelse(is.na(d2$BF_raw), NA_integer_,
 d2$BF_raw <- NULL
 
 # ------------------------------------------------------------------ cohort
-# Each timepoint uses its own sample list — NO intersection filtering.
+# Filter each timepoint by the sample list (table1/sample list.xlsx).
+# 6M column = 6m sample list; 2Y column = 2y sample list.
+fsl <- "table1/sample list.xlsx"
+if (!file.exists(fsl)) fsl <- "sample list.xlsx"
+sl <- read_excel(fsl, sheet = 1, .name_repair = "minimal")
+sl_6m <- na.omit(as.character(sl$`6m`))
+sl_2y <- na.omit(as.character(sl$`2y`))
+
+d6 <- d6[d6$case_no %in% sl_6m, ]
+d2 <- d2[d2$case_no %in% sl_2y, ]
+
 # Backfill 6M time-invariant fields (sex, GA, BWt) from 収案名單 for cases
 # whose 6M Blood_Urine row had empty demographics.
 m_6toS <- match(d6$case_no, d2$case_no)
@@ -134,10 +144,10 @@ for (v in c("sex_male", "GA_wk", "BWt_g")) {
 }
 
 cat("\n=============================================\n")
-cat(" Sample sizes (each timepoint independent)\n")
+cat(" Sample sizes (filtered by sample list)\n")
 cat("=============================================\n")
-cat("  6M (Blood_Urine)   n =", nrow(d6), "\n")
-cat("  2Y (收案名單)      n =", nrow(d2), "\n")
+cat("  6M sample list n =", length(sl_6m), " -> matched:", nrow(d6), "\n")
+cat("  2Y sample list n =", length(sl_2y), " -> matched:", nrow(d2), "\n")
 cat("  overlap (same case) =", length(intersect(d6$case_no, d2$case_no)), "\n")
 
 cat("\n  6M GA3Group  0/1/2:", sum(d6$GA3Group==0,na.rm=TRUE), "/",

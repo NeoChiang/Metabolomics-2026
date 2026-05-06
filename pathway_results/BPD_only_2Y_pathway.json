@@ -8,7 +8,7 @@
     "Raw_P": 0.0014169732842745158,
     "FDR": 0.045343145096784505,
     "Impact": 0.208,
-    "Hit_Metabolites": "2-Aminobutyric acid; Propylene glycol",
+    "Hits_metabolites_name": "2-Aminobutyric acid; Propylene glycol",
     "Significant": "Yes"
   },
   {
@@ -20,7 +20,7 @@
     "Raw_P": 0.02138116724853435,
     "FDR": 0.3420986759765496,
     "Impact": 0.115,
-    "Hit_Metabolites": "2-Aminobutyric acid; Citric acid",
+    "Hits_metabolites_name": "2-Aminobutyric acid; Citric acid",
     "Significant": "Yes"
   },
   {
@@ -32,7 +32,7 @@
     "Raw_P": 0.07322993026998034,
     "FDR": 0.41582187186184655,
     "Impact": 0.312,
-    "Hit_Metabolites": "Citric acid",
+    "Hits_metabolites_name": "Citric acid",
     "Significant": "No"
   },
   {
@@ -44,7 +44,7 @@
     "Raw_P": 0.07322993026998034,
     "FDR": 0.41582187186184655,
     "Impact": 0.174,
-    "Hit_Metabolites": "Citric acid",
+    "Hits_metabolites_name": "Citric acid",
     "Significant": "No"
   },
   {
@@ -56,7 +56,7 @@
     "Raw_P": 0.07322993026998034,
     "FDR": 0.41582187186184655,
     "Impact": 0.198,
-    "Hit_Metabolites": "Citric acid",
+    "Hits_metabolites_name": "Citric acid",
     "Significant": "No"
   },
   {
@@ -68,7 +68,7 @@
     "Raw_P": 0.08034977932942493,
     "FDR": 0.41582187186184655,
     "Impact": 0.209,
-    "Hit_Metabolites": "Citric acid",
+    "Hits_metabolites_name": "Citric acid",
     "Significant": "No"
   },
   {
@@ -80,7 +80,7 @@
     "Raw_P": 0.09096103446977893,
     "FDR": 0.41582187186184655,
     "Impact": 0.189,
-    "Hit_Metabolites": "Citric acid",
+    "Hits_metabolites_name": "Citric acid",
     "Significant": "No"
   },
   {
@@ -92,7 +92,7 @@
     "Raw_P": 0.11193804285431974,
     "FDR": 0.422606160792051,
     "Impact": 0.204,
-    "Hit_Metabolites": "Citric acid",
+    "Hits_metabolites_name": "Citric acid",
     "Significant": "No"
   },
   {
@@ -104,7 +104,7 @@
     "Raw_P": 0.11885798272276434,
     "FDR": 0.422606160792051,
     "Impact": 0.221,
-    "Hit_Metabolites": "2-Aminobutyric acid",
+    "Hits_metabolites_name": "2-Aminobutyric acid",
     "Significant": "No"
   },
   {
@@ -116,7 +116,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.185,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -128,7 +128,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.271,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -140,7 +140,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.234,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -152,7 +152,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.298,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -164,7 +164,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.145,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -176,7 +176,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.089,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -188,7 +188,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.19,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -200,7 +200,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.256,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -212,7 +212,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.137,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -224,7 +224,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.36,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -236,7 +236,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.186,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -248,7 +248,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.282,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -260,7 +260,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.131,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -272,7 +272,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.196,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -284,7 +284,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.237,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -296,7 +296,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.098,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -308,7 +308,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.183,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -320,7 +320,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.143,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -332,7 +332,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.241,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -344,7 +344,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.148,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -356,7 +356,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.217,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -368,7 +368,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.162,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -380,7 +380,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.124,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   }
 ]

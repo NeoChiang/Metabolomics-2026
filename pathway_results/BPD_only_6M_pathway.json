@@ -8,7 +8,7 @@
     "Raw_P": 4.576874158457277e-06,
     "FDR": 0.00014645997307063287,
     "Impact": 0.115,
-    "Hit_Metabolites": "2-Aminobutyric acid; Acetic acid; Citramalic acid; Citric acid; Gluconic acid; Glutamine; Lysine; Succinic acid",
+    "Hits_metabolites_name": "2-Aminobutyric acid; Acetic acid; Citramalic acid; Citric acid; Gluconic acid; Glutamine; Lysine; Succinic acid",
     "Significant": "Yes"
   },
   {
@@ -20,7 +20,7 @@
     "Raw_P": 0.00015689340503457886,
     "FDR": 0.001947218172093966,
     "Impact": 0.208,
-    "Hit_Metabolites": "2-Aminobutyric acid; 3-Hydroxyisobutyric acid; Acetic acid; Succinic acid",
+    "Hits_metabolites_name": "2-Aminobutyric acid; 3-Hydroxyisobutyric acid; Acetic acid; Succinic acid",
     "Significant": "Yes"
   },
   {
@@ -32,7 +32,7 @@
     "Raw_P": 0.00024340227151174574,
     "FDR": 0.001947218172093966,
     "Impact": 0.312,
-    "Hit_Metabolites": "Citramalic acid; Citric acid; Glutamine; Succinic acid",
+    "Hits_metabolites_name": "Citramalic acid; Citric acid; Glutamine; Succinic acid",
     "Significant": "Yes"
   },
   {
@@ -44,7 +44,7 @@
     "Raw_P": 0.00024340227151174574,
     "FDR": 0.001947218172093966,
     "Impact": 0.198,
-    "Hit_Metabolites": "2-Methylglutaric acid; Citric acid; Glutamine; Succinic acid",
+    "Hits_metabolites_name": "2-Methylglutaric acid; Citric acid; Glutamine; Succinic acid",
     "Significant": "Yes"
   },
   {
@@ -56,7 +56,7 @@
     "Raw_P": 0.001412473326184007,
     "FDR": 0.009039829287577645,
     "Impact": 0.204,
-    "Hit_Metabolites": "Acetic acid; Citric acid; Gluconic acid; Succinic acid",
+    "Hits_metabolites_name": "Acetic acid; Citric acid; Gluconic acid; Succinic acid",
     "Significant": "Yes"
   },
   {
@@ -68,7 +68,7 @@
     "Raw_P": 0.003739594013478068,
     "FDR": 0.01868828181806618,
     "Impact": 0.298,
-    "Hit_Metabolites": "2-Methylglutaric acid; 3-Aminoisobutyric acid; 3-Hydroxyisobutyric acid; Succinic acid",
+    "Hits_metabolites_name": "2-Methylglutaric acid; 3-Aminoisobutyric acid; 3-Hydroxyisobutyric acid; Succinic acid",
     "Significant": "Yes"
   },
   {
@@ -80,7 +80,7 @@
     "Raw_P": 0.004088061647701977,
     "FDR": 0.01868828181806618,
     "Impact": 0.174,
-    "Hit_Metabolites": "Citric acid; Gluconic acid; Succinic acid",
+    "Hits_metabolites_name": "Citric acid; Gluconic acid; Succinic acid",
     "Significant": "Yes"
   },
   {
@@ -92,7 +92,7 @@
     "Raw_P": 0.005408180932661906,
     "FDR": 0.021632723730647625,
     "Impact": 0.209,
-    "Hit_Metabolites": "Acetic acid; Citric acid; Succinic acid",
+    "Hits_metabolites_name": "Acetic acid; Citric acid; Succinic acid",
     "Significant": "Yes"
   },
   {
@@ -104,7 +104,7 @@
     "Raw_P": 0.006960724527332015,
     "FDR": 0.024749242763847164,
     "Impact": 0.271,
-    "Hit_Metabolites": "Glutamine; N-Acetylaspartic acid; Succinic acid",
+    "Hits_metabolites_name": "Glutamine; N-Acetylaspartic acid; Succinic acid",
     "Significant": "Yes"
   },
   {
@@ -116,7 +116,7 @@
     "Raw_P": 0.025053059250204845,
     "FDR": 0.0801697896006555,
     "Impact": 0.256,
-    "Hit_Metabolites": "Glutamine; Methylguanidine; Succinic acid",
+    "Hits_metabolites_name": "Glutamine; Methylguanidine; Succinic acid",
     "Significant": "Yes"
   },
   {
@@ -128,7 +128,7 @@
     "Raw_P": 0.05380698325826615,
     "FDR": 0.1565294058422288,
     "Impact": 0.196,
-    "Hit_Metabolites": "3-Aminoisobutyric acid; Succinic acid",
+    "Hits_metabolites_name": "3-Aminoisobutyric acid; Succinic acid",
     "Significant": "No"
   },
   {
@@ -140,7 +140,7 @@
     "Raw_P": 0.0678156695538763,
     "FDR": 0.18084178547700347,
     "Impact": 0.189,
-    "Hit_Metabolites": "Citric acid; Succinic acid",
+    "Hits_metabolites_name": "Citric acid; Succinic acid",
     "Significant": "No"
   },
   {
@@ -152,7 +152,7 @@
     "Raw_P": 0.17752711288232642,
     "FDR": 0.4369898163257266,
     "Impact": 0.089,
-    "Hit_Metabolites": "Lysine",
+    "Hits_metabolites_name": "Lysine",
     "Significant": "No"
   },
   {
@@ -164,7 +164,7 @@
     "Raw_P": 0.23447293679039583,
     "FDR": 0.5293347173242163,
     "Impact": 0.162,
-    "Hit_Metabolites": "3-Aminoisobutyric acid",
+    "Hits_metabolites_name": "3-Aminoisobutyric acid",
     "Significant": "No"
   },
   {
@@ -176,7 +176,7 @@
     "Raw_P": 0.2481256487457264,
     "FDR": 0.5293347173242163,
     "Impact": 0.137,
-    "Hit_Metabolites": "Glutamine",
+    "Hits_metabolites_name": "Glutamine",
     "Significant": "No"
   },
   {
@@ -188,7 +188,7 @@
     "Raw_P": 0.3005071055353302,
     "FDR": 0.6010142110706604,
     "Impact": 0.098,
-    "Hit_Metabolites": "N-Acetylaspartic acid",
+    "Hits_metabolites_name": "N-Acetylaspartic acid",
     "Significant": "No"
   },
   {
@@ -200,7 +200,7 @@
     "Raw_P": 0.3254075882503016,
     "FDR": 0.6125319308240971,
     "Impact": 0.185,
-    "Hit_Metabolites": "Gluconic acid",
+    "Hits_metabolites_name": "Gluconic acid",
     "Significant": "No"
   },
   {
@@ -212,7 +212,7 @@
     "Raw_P": 0.3612190109712713,
     "FDR": 0.6421671306155934,
     "Impact": 0.19,
-    "Hit_Metabolites": "Lysine",
+    "Hits_metabolites_name": "Lysine",
     "Significant": "No"
   },
   {
@@ -224,7 +224,7 @@
     "Raw_P": 0.39525839207468194,
     "FDR": 0.6656983445468327,
     "Impact": 0.183,
-    "Hit_Metabolites": "Glutamine",
+    "Hits_metabolites_name": "Glutamine",
     "Significant": "No"
   },
   {
@@ -236,7 +236,7 @@
     "Raw_P": 0.4482719488669508,
     "FDR": 0.7172351181871213,
     "Impact": 0.221,
-    "Hit_Metabolites": "2-Aminobutyric acid",
+    "Hits_metabolites_name": "2-Aminobutyric acid",
     "Significant": "No"
   },
   {
@@ -248,7 +248,7 @@
     "Raw_P": 0.532975420273424,
     "FDR": 0.8121530213690271,
     "Impact": 0.36,
-    "Hit_Metabolites": "Succinic acid",
+    "Hits_metabolites_name": "Succinic acid",
     "Significant": "No"
   },
   {
@@ -260,7 +260,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.234,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -272,7 +272,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.145,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -284,7 +284,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.186,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -296,7 +296,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.282,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -308,7 +308,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.131,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -320,7 +320,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.237,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -332,7 +332,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.143,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -344,7 +344,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.241,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -356,7 +356,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.148,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -368,7 +368,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.217,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -380,7 +380,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.124,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   }
 ]

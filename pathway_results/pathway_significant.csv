@@ -1,4 +1,4 @@
-Group,Pathway_ID,Pathway,Total,Hits,Raw_P,FDR,Impact,Hit_Metabolites,Significant
+Group,Pathway_ID,Pathway,Total,Hits,Raw_P,FDR,Impact,Hits_metabolites_name,Significant
 BPD_only_2Y,hsa00640,Propanoate metabolism,18,2,0.0014169732842745158,0.045343145096784505,0.208,2-Aminobutyric acid; Propylene glycol,Yes
 BPD_only_2Y,hsa01200,Carbon metabolism,70,2,0.02138116724853435,0.3420986759765496,0.115,2-Aminobutyric acid; Citric acid,Yes
 BPD_only_6M,hsa01200,Carbon metabolism,70,8,4.576874158457277e-06,0.00014645997307063287,0.115,2-Aminobutyric acid; Acetic acid; Citramalic acid; Citric acid; Gluconic acid; Glutamine; Lysine; Succinic acid,Yes

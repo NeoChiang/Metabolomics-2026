@@ -604,7 +604,7 @@ def run_ora(compound_list: list[str], group_name: str) -> list[dict]:
             "Raw_P": raw_p,
             "FDR": None,  # filled after BH correction
             "Impact": pw["impact"],
-            "Hit_Metabolites": "; ".join(sorted(hits_in_query)),
+            "Hits_metabolites_name": "; ".join(sorted(hits_in_query)),
             "Significant": "No",
         })
 
@@ -658,7 +658,7 @@ def main():
     # ── Summary CSV ───────────────────────────────────────────────────────────
     df = pd.DataFrame(all_rows, columns=[
         "Group", "Pathway_ID", "Pathway", "Total", "Hits",
-        "Raw_P", "FDR", "Impact", "Hit_Metabolites", "Significant",
+        "Raw_P", "FDR", "Impact", "Hits_metabolites_name", "Significant",
     ])
     df.sort_values(["Group", "Raw_P"], inplace=True)
     df.reset_index(drop=True, inplace=True)
@@ -679,7 +679,7 @@ def main():
 
     if len(sig_df):
         print("\nAll significant pathways:")
-        print(sig_df[["Group", "Pathway", "Total", "Hits", "Raw_P", "FDR", "Impact"]].to_string(index=False))
+        print(sig_df[["Group", "Pathway", "Total", "Hits", "Raw_P", "FDR", "Impact", "Hits_metabolites_name"]].to_string(index=False))
 
 
 if __name__ == "__main__":

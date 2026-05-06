@@ -8,7 +8,7 @@
     "Raw_P": 2.486897763489454e-05,
     "FDR": 0.0007958072843166253,
     "Impact": 0.115,
-    "Hit_Metabolites": "Alanine; Formic acid; Gluconic acid; Lactic acid; Taurine; Tyrosine",
+    "Hits_metabolites_name": "Alanine; Formic acid; Gluconic acid; Lactic acid; Taurine; Tyrosine",
     "Significant": "Yes"
   },
   {
@@ -20,7 +20,7 @@
     "Raw_P": 0.0013656110354992729,
     "FDR": 0.021849776567988366,
     "Impact": 0.209,
-    "Hit_Metabolites": "Alanine; Formic acid; Lactic acid",
+    "Hits_metabolites_name": "Alanine; Formic acid; Lactic acid",
     "Significant": "Yes"
   },
   {
@@ -32,7 +32,7 @@
     "Raw_P": 0.003785189690651394,
     "FDR": 0.038690695225107215,
     "Impact": 0.204,
-    "Hit_Metabolites": "Alanine; Gluconic acid; Lactic acid",
+    "Hits_metabolites_name": "Alanine; Gluconic acid; Lactic acid",
     "Significant": "Yes"
   },
   {
@@ -44,7 +44,7 @@
     "Raw_P": 0.004836336903138402,
     "FDR": 0.038690695225107215,
     "Impact": 0.124,
-    "Hit_Metabolites": "Alanine; Tyrosine",
+    "Hits_metabolites_name": "Alanine; Tyrosine",
     "Significant": "Yes"
   },
   {
@@ -56,7 +56,7 @@
     "Raw_P": 0.014027332570740098,
     "FDR": 0.08977492845273663,
     "Impact": 0.186,
-    "Hit_Metabolites": "4-Hydroxyphenylacetic acid; Tyrosine",
+    "Hits_metabolites_name": "4-Hydroxyphenylacetic acid; Tyrosine",
     "Significant": "Yes"
   },
   {
@@ -68,7 +68,7 @@
     "Raw_P": 0.01925420188822017,
     "FDR": 0.10268907673717424,
     "Impact": 0.174,
-    "Hit_Metabolites": "Formic acid; Gluconic acid",
+    "Hits_metabolites_name": "Formic acid; Gluconic acid",
     "Significant": "Yes"
   },
   {
@@ -80,7 +80,7 @@
     "Raw_P": 0.029519651059347278,
     "FDR": 0.13494697627130184,
     "Impact": 0.189,
-    "Hit_Metabolites": "Alanine; Tyrosine",
+    "Hits_metabolites_name": "Alanine; Tyrosine",
     "Significant": "Yes"
   },
   {
@@ -92,7 +92,7 @@
     "Raw_P": 0.03413356024679447,
     "FDR": 0.13653424098717787,
     "Impact": 0.234,
-    "Hit_Metabolites": "Formic acid; Taurine",
+    "Hits_metabolites_name": "Formic acid; Taurine",
     "Significant": "Yes"
   },
   {
@@ -104,7 +104,7 @@
     "Raw_P": 0.049562513598493285,
     "FDR": 0.17622227057242057,
     "Impact": 0.221,
-    "Hit_Metabolites": "Alanine; Taurine",
+    "Hits_metabolites_name": "Alanine; Taurine",
     "Significant": "Yes"
   },
   {
@@ -116,7 +116,7 @@
     "Raw_P": 0.07342464067103932,
     "FDR": 0.22295935869950617,
     "Impact": 0.282,
-    "Hit_Metabolites": "Alanine; Formic acid",
+    "Hits_metabolites_name": "Alanine; Formic acid",
     "Significant": "No"
   },
   {
@@ -128,7 +128,7 @@
     "Raw_P": 0.07664227955295524,
     "FDR": 0.22295935869950617,
     "Impact": 0.36,
-    "Hit_Metabolites": "4-Hydroxyphenylacetic acid; Tyrosine",
+    "Hits_metabolites_name": "4-Hydroxyphenylacetic acid; Tyrosine",
     "Significant": "No"
   },
   {
@@ -140,7 +140,7 @@
     "Raw_P": 0.10754818286497046,
     "FDR": 0.2867951543065879,
     "Impact": 0.237,
-    "Hit_Metabolites": "Taurine",
+    "Hits_metabolites_name": "Taurine",
     "Significant": "No"
   },
   {
@@ -152,7 +152,7 @@
     "Raw_P": 0.12777943886297777,
     "FDR": 0.3145340033550222,
     "Impact": 0.148,
-    "Hit_Metabolites": "Formic acid",
+    "Hits_metabolites_name": "Formic acid",
     "Significant": "No"
   },
   {
@@ -164,7 +164,7 @@
     "Raw_P": 0.16702309130976314,
     "FDR": 0.37549206647449496,
     "Impact": 0.137,
-    "Hit_Metabolites": "Formic acid",
+    "Hits_metabolites_name": "Formic acid",
     "Significant": "No"
   },
   {
@@ -176,7 +176,7 @@
     "Raw_P": 0.17658532623095216,
     "FDR": 0.37549206647449496,
     "Impact": 0.131,
-    "Hit_Metabolites": "Tyrosine",
+    "Hits_metabolites_name": "Tyrosine",
     "Significant": "No"
   },
   {
@@ -188,7 +188,7 @@
     "Raw_P": 0.2046893317833046,
     "FDR": 0.37549206647449496,
     "Impact": 0.312,
-    "Hit_Metabolites": "Formic acid",
+    "Hits_metabolites_name": "Formic acid",
     "Significant": "No"
   },
   {
@@ -200,7 +200,7 @@
     "Raw_P": 0.2229484144692314,
     "FDR": 0.37549206647449496,
     "Impact": 0.185,
-    "Hit_Metabolites": "Gluconic acid",
+    "Hits_metabolites_name": "Gluconic acid",
     "Significant": "No"
   },
   {
@@ -212,7 +212,7 @@
     "Raw_P": 0.2229484144692314,
     "FDR": 0.37549206647449496,
     "Impact": 0.196,
-    "Hit_Metabolites": "Alanine",
+    "Hits_metabolites_name": "Alanine",
     "Significant": "No"
   },
   {
@@ -224,7 +224,7 @@
     "Raw_P": 0.2229484144692314,
     "FDR": 0.37549206647449496,
     "Impact": 0.217,
-    "Hit_Metabolites": "1-Methylnicotinamide",
+    "Hits_metabolites_name": "1-Methylnicotinamide",
     "Significant": "No"
   },
   {
@@ -236,7 +236,7 @@
     "Raw_P": 0.24083392058674735,
     "FDR": 0.38040180086408504,
     "Impact": 0.271,
-    "Hit_Metabolites": "Alanine",
+    "Hits_metabolites_name": "Alanine",
     "Significant": "No"
   },
   {
@@ -248,7 +248,7 @@
     "Raw_P": 0.2496386818170558,
     "FDR": 0.38040180086408504,
     "Impact": 0.19,
-    "Hit_Metabolites": "N6-Acetyl-L-lysine",
+    "Hits_metabolites_name": "N6-Acetyl-L-lysine",
     "Significant": "No"
   },
   {
@@ -260,7 +260,7 @@
     "Raw_P": 0.2755109199134497,
     "FDR": 0.40074315623774504,
     "Impact": 0.183,
-    "Hit_Metabolites": "Formic acid",
+    "Hits_metabolites_name": "Formic acid",
     "Significant": "No"
   },
   {
@@ -272,7 +272,7 @@
     "Raw_P": 0.37125243474106223,
     "FDR": 0.5165251265962605,
     "Impact": 0.298,
-    "Hit_Metabolites": "Formic acid",
+    "Hits_metabolites_name": "Formic acid",
     "Significant": "No"
   },
   {
@@ -284,7 +284,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.145,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -296,7 +296,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.089,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -308,7 +308,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.256,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -320,7 +320,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.098,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -332,7 +332,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.143,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -344,7 +344,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.241,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -356,7 +356,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.208,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -368,7 +368,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.198,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -380,7 +380,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.162,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   }
 ]

@@ -8,7 +8,7 @@
     "Raw_P": 0.0002182922698678208,
     "FDR": 0.006985352635770266,
     "Impact": 0.186,
-    "Hit_Metabolites": "4-Hydroxyphenylacetic acid; Hippuric acid; Phenylacetylglycine; Tyrosine",
+    "Hits_metabolites_name": "4-Hydroxyphenylacetic acid; Hippuric acid; Phenylacetylglycine; Tyrosine",
     "Significant": "Yes"
   },
   {
@@ -20,7 +20,7 @@
     "Raw_P": 0.007550574955979822,
     "FDR": 0.12080919929567716,
     "Impact": 0.36,
-    "Hit_Metabolites": "4-Hydroxyphenylacetic acid; Phenylacetylglycine; Tyrosine; trans-Aconitic acid",
+    "Hits_metabolites_name": "4-Hydroxyphenylacetic acid; Phenylacetylglycine; Tyrosine; trans-Aconitic acid",
     "Significant": "Yes"
   },
   {
@@ -32,7 +32,7 @@
     "Raw_P": 0.011551616529604099,
     "FDR": 0.12321724298244373,
     "Impact": 0.189,
-    "Hit_Metabolites": "3-Methyl-2-oxopentanoic acid; Tyrosine; Valine",
+    "Hits_metabolites_name": "3-Methyl-2-oxopentanoic acid; Tyrosine; Valine",
     "Significant": "Yes"
   },
   {
@@ -44,7 +44,7 @@
     "Raw_P": 0.025741060078810354,
     "FDR": 0.20592848063048283,
     "Impact": 0.145,
-    "Hit_Metabolites": "3-Methyl-2-oxopentanoic acid; Valine",
+    "Hits_metabolites_name": "3-Methyl-2-oxopentanoic acid; Valine",
     "Significant": "Yes"
   },
   {
@@ -56,7 +56,7 @@
     "Raw_P": 0.03385102446969918,
     "FDR": 0.21664655660607476,
     "Impact": 0.162,
-    "Hit_Metabolites": "Pantothenic acid; Valine",
+    "Hits_metabolites_name": "Pantothenic acid; Valine",
     "Significant": "Yes"
   },
   {
@@ -68,7 +68,7 @@
     "Raw_P": 0.04366687169262313,
     "FDR": 0.21773433035777273,
     "Impact": 0.115,
-    "Hit_Metabolites": "N,N-Dimethylglycine; Tyrosine; Valine; trans-Aconitic acid",
+    "Hits_metabolites_name": "N,N-Dimethylglycine; Tyrosine; Valine; trans-Aconitic acid",
     "Significant": "Yes"
   },
   {
@@ -80,7 +80,7 @@
     "Raw_P": 0.04762938476576278,
     "FDR": 0.21773433035777273,
     "Impact": 0.208,
-    "Hit_Metabolites": "3-Methyl-2-oxopentanoic acid; Valine",
+    "Hits_metabolites_name": "3-Methyl-2-oxopentanoic acid; Valine",
     "Significant": "Yes"
   },
   {
@@ -92,7 +92,7 @@
     "Raw_P": 0.06864022969952172,
     "FDR": 0.2440541500427439,
     "Impact": 0.209,
-    "Hit_Metabolites": "2-Hydroxyisobutyric acid; Pantothenic acid",
+    "Hits_metabolites_name": "2-Hydroxyisobutyric acid; Pantothenic acid",
     "Significant": "No"
   },
   {
@@ -104,7 +104,7 @@
     "Raw_P": 0.06864022969952172,
     "FDR": 0.2440541500427439,
     "Impact": 0.217,
-    "Hit_Metabolites": "1-Methylnicotinamide; Trigonelline",
+    "Hits_metabolites_name": "1-Methylnicotinamide; Trigonelline",
     "Significant": "No"
   },
   {
@@ -116,7 +116,7 @@
     "Raw_P": 0.1838721817510322,
     "FDR": 0.5477771511195809,
     "Impact": 0.124,
-    "Hit_Metabolites": "Tyrosine",
+    "Hits_metabolites_name": "Tyrosine",
     "Significant": "No"
   },
   {
@@ -128,7 +128,7 @@
     "Raw_P": 0.18829839569735593,
     "FDR": 0.5477771511195809,
     "Impact": 0.298,
-    "Hit_Metabolites": "3-Methyl-2-oxopentanoic acid; Valine",
+    "Hits_metabolites_name": "3-Methyl-2-oxopentanoic acid; Valine",
     "Significant": "No"
   },
   {
@@ -140,7 +140,7 @@
     "Raw_P": 0.2931694865133576,
     "FDR": 0.7672546498117353,
     "Impact": 0.131,
-    "Hit_Metabolites": "Tyrosine",
+    "Hits_metabolites_name": "Tyrosine",
     "Significant": "No"
   },
   {
@@ -152,7 +152,7 @@
     "Raw_P": 0.3356739092926342,
     "FDR": 0.7672546498117353,
     "Impact": 0.312,
-    "Hit_Metabolites": "trans-Aconitic acid",
+    "Hits_metabolites_name": "trans-Aconitic acid",
     "Significant": "No"
   },
   {
@@ -164,7 +164,7 @@
     "Raw_P": 0.3356739092926342,
     "FDR": 0.7672546498117353,
     "Impact": 0.174,
-    "Hit_Metabolites": "trans-Aconitic acid",
+    "Hits_metabolites_name": "trans-Aconitic acid",
     "Significant": "No"
   },
   {
@@ -176,7 +176,7 @@
     "Raw_P": 0.36266591503204937,
     "FDR": 0.7736872854017053,
     "Impact": 0.196,
-    "Hit_Metabolites": "Pantothenic acid",
+    "Hits_metabolites_name": "Pantothenic acid",
     "Significant": "No"
   },
   {
@@ -188,7 +188,7 @@
     "Raw_P": 0.40123276314053974,
     "FDR": 0.7779614936485595,
     "Impact": 0.143,
-    "Hit_Metabolites": "Sucrose",
+    "Hits_metabolites_name": "Sucrose",
     "Significant": "No"
   },
   {
@@ -200,7 +200,7 @@
     "Raw_P": 0.42571648871474804,
     "FDR": 0.7779614936485595,
     "Impact": 0.234,
-    "Hit_Metabolites": "N,N-Dimethylglycine",
+    "Hits_metabolites_name": "N,N-Dimethylglycine",
     "Significant": "No"
   },
   {
@@ -212,7 +212,7 @@
     "Raw_P": 0.4376033401773147,
     "FDR": 0.7779614936485595,
     "Impact": 0.183,
-    "Hit_Metabolites": "N,N-Dimethylglycine",
+    "Hits_metabolites_name": "N,N-Dimethylglycine",
     "Significant": "No"
   },
   {
@@ -224,7 +224,7 @@
     "Raw_P": 0.47189482638082064,
     "FDR": 0.79477023390454,
     "Impact": 0.204,
-    "Hit_Metabolites": "Valine",
+    "Hits_metabolites_name": "Valine",
     "Significant": "No"
   },
   {
@@ -236,7 +236,7 @@
     "Raw_P": 0.5247270159094756,
     "FDR": 0.8296199043757191,
     "Impact": 0.241,
-    "Hit_Metabolites": "Acetylsalicylic acid",
+    "Hits_metabolites_name": "Acetylsalicylic acid",
     "Significant": "No"
   },
   {
@@ -248,7 +248,7 @@
     "Raw_P": 0.5444380622465657,
     "FDR": 0.8296199043757191,
     "Impact": 0.256,
-    "Hit_Metabolites": "Creatine",
+    "Hits_metabolites_name": "Creatine",
     "Significant": "No"
   },
   {
@@ -260,7 +260,7 @@
     "Raw_P": 0.5725727102100802,
     "FDR": 0.8328330330328438,
     "Impact": 0.282,
-    "Hit_Metabolites": "Indoxyl sulfate",
+    "Hits_metabolites_name": "Indoxyl sulfate",
     "Significant": "No"
   },
   {
@@ -272,7 +272,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.185,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -284,7 +284,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.271,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -296,7 +296,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.221,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -308,7 +308,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.089,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -320,7 +320,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.19,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -332,7 +332,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.137,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -344,7 +344,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.237,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -356,7 +356,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.098,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -368,7 +368,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.198,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   },
   {
@@ -380,7 +380,7 @@
     "Raw_P": 1.0,
     "FDR": 1.0,
     "Impact": 0.148,
-    "Hit_Metabolites": "",
+    "Hits_metabolites_name": "",
     "Significant": "No"
   }
 ]

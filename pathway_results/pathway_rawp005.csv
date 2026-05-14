@@ -1,0 +1,15 @@
+Group,Pathway_ID,Pathway,Total,Hits,Raw_P,FDR,Impact,Hits_metabolites_name,Significant
+BPD_only_2Y,hsa00640,Propanoate metabolism,18,2,0.0014169732842745158,0.03967525195968644,0.208,2-Aminobutyric acid; Propylene glycol,Yes
+BPD_only_6M,hsa00640,Propanoate metabolism,18,3,0.002987997643484538,0.052354316188692955,0.208,2-Aminobutyric acid; 3-Hydroxyisobutyric acid; Succinic acid,Yes
+BPD_only_6M,hsa00280,"Valine, leucine and isoleucine degradation",40,4,0.003739594013478068,0.052354316188692955,0.298,2-Methylglutaric acid; 3-Aminoisobutyric acid; 3-Hydroxyisobutyric acid; Succinic acid,Yes
+BPD_only_6M,hsa00020,Citrate cycle (TCA cycle),20,2,0.045151159707289314,0.25284649436082013,0.312,Citric acid; Succinic acid,Yes
+BPD_only_6M,hsa00630,Glyoxylate and dicarboxylate metabolism,20,2,0.045151159707289314,0.25284649436082013,0.174,Citric acid; Succinic acid,Yes
+BPD_only_6M,hsa00650,Butanoate metabolism,20,2,0.045151159707289314,0.25284649436082013,0.198,Glutamine; Succinic acid,Yes
+Both_GA_BPD_2Y,hsa00630,Glyoxylate and dicarboxylate metabolism,20,2,0.01925420188822017,0.2695588264350824,0.174,Glycine; Succinic acid,Yes
+Both_GA_BPD_2Y,hsa00650,Butanoate metabolism,20,2,0.01925420188822017,0.2695588264350824,0.198,Glutamine; Succinic acid,Yes
+Both_GA_BPD_6M,hsa00360,Phenylalanine metabolism,17,4,0.0002182922698678208,0.006112183556298983,0.186,4-Hydroxyphenylacetic acid; Hippuric acid; Phenylacetylglycine; Tyrosine,Yes
+Both_GA_BPD_6M,hsa00290,"Valine, leucine and isoleucine biosynthesis",13,2,0.025741060078810354,0.3159428950505257,0.145,3-Methyl-2-oxopentanoic acid; Valine,Yes
+Both_GA_BPD_6M,hsa00770,Pantothenate and CoA biosynthesis,15,2,0.03385102446969918,0.3159428950505257,0.162,Pantothenic acid; Valine,Yes
+GA_only_2Y,hsa00360,Phenylalanine metabolism,17,2,0.014027332570740098,0.32389209465847413,0.186,4-Hydroxyphenylacetic acid; Tyrosine,Yes
+GA_only_2Y,hsa00620,Pyruvate metabolism,22,2,0.023135149618462435,0.32389209465847413,0.209,Alanine; Lactic acid,Yes
+GA_only_2Y,hsa00270,Cysteine and methionine metabolism,33,2,0.049562513598493285,0.462583460252604,0.221,Alanine; Taurine,Yes

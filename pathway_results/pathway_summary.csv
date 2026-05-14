@@ -1,0 +1,141 @@
+Group,Pathway_ID,Pathway,Total,Hits,Raw_P,FDR,Impact,Hits_metabolites_name,Significant
+BPD_only_2Y,hsa00640,Propanoate metabolism,18,2,0.0014169732842745158,0.03967525195968644,0.208,2-Aminobutyric acid; Propylene glycol,Yes
+BPD_only_2Y,hsa00020,Citrate cycle (TCA cycle),20,1,0.07322993026998034,0.6834793491864832,0.312,Citric acid,No
+BPD_only_2Y,hsa00630,Glyoxylate and dicarboxylate metabolism,20,1,0.07322993026998034,0.6834793491864832,0.174,Citric acid,No
+BPD_only_2Y,hsa00270,Cysteine and methionine metabolism,33,1,0.11885798272276434,0.8320058790593504,0.221,2-Aminobutyric acid,No
+BPD_only_2Y,hsa00010,Glycolysis / Gluconeogenesis,28,0,1.0,1.0,0.204,,No
+BPD_only_2Y,hsa00030,Pentose phosphate pathway,22,0,1.0,1.0,0.185,,No
+BPD_only_2Y,hsa00250,"Alanine, aspartate and glutamate metabolism",24,0,1.0,1.0,0.271,,No
+BPD_only_2Y,hsa00260,"Glycine, serine and threonine metabolism",27,0,1.0,1.0,0.234,,No
+BPD_only_2Y,hsa00280,"Valine, leucine and isoleucine degradation",40,0,1.0,1.0,0.298,,No
+BPD_only_2Y,hsa00290,"Valine, leucine and isoleucine biosynthesis",13,0,1.0,1.0,0.145,,No
+BPD_only_2Y,hsa00300,Lysine biosynthesis,11,0,1.0,1.0,0.089,,No
+BPD_only_2Y,hsa00310,Lysine degradation,25,0,1.0,1.0,0.19,,No
+BPD_only_2Y,hsa00330,Arginine and proline metabolism,38,0,1.0,1.0,0.256,,No
+BPD_only_2Y,hsa00350,Tyrosine metabolism,42,0,1.0,1.0,0.36,,No
+BPD_only_2Y,hsa00360,Phenylalanine metabolism,17,0,1.0,1.0,0.186,,No
+BPD_only_2Y,hsa00380,Tryptophan metabolism,41,0,1.0,1.0,0.282,,No
+BPD_only_2Y,hsa00400,"Phenylalanine, tyrosine and tryptophan biosynthesis",17,0,1.0,1.0,0.131,,No
+BPD_only_2Y,hsa00410,beta-Alanine metabolism,22,0,1.0,1.0,0.196,,No
+BPD_only_2Y,hsa00430,Taurine and hypotaurine metabolism,10,0,1.0,1.0,0.237,,No
+BPD_only_2Y,hsa00470,D-Amino acid metabolism,20,0,1.0,1.0,0.098,,No
+BPD_only_2Y,hsa00480,Glutathione metabolism,28,0,1.0,1.0,0.183,,No
+BPD_only_2Y,hsa00500,Starch and sucrose metabolism,25,0,1.0,1.0,0.143,,No
+BPD_only_2Y,hsa00620,Pyruvate metabolism,22,0,1.0,1.0,0.209,,No
+BPD_only_2Y,hsa00650,Butanoate metabolism,20,0,1.0,1.0,0.198,,No
+BPD_only_2Y,hsa00670,One carbon pool by folate,12,0,1.0,1.0,0.148,,No
+BPD_only_2Y,hsa00760,Nicotinate and nicotinamide metabolism,22,0,1.0,1.0,0.217,,No
+BPD_only_2Y,hsa00770,Pantothenate and CoA biosynthesis,15,0,1.0,1.0,0.162,,No
+BPD_only_2Y,hsa01210,2-Oxocarboxylic acid metabolism,25,0,1.0,1.0,0.189,,No
+BPD_only_6M,hsa00640,Propanoate metabolism,18,3,0.002987997643484538,0.052354316188692955,0.208,2-Aminobutyric acid; 3-Hydroxyisobutyric acid; Succinic acid,Yes
+BPD_only_6M,hsa00280,"Valine, leucine and isoleucine degradation",40,4,0.003739594013478068,0.052354316188692955,0.298,2-Methylglutaric acid; 3-Aminoisobutyric acid; 3-Hydroxyisobutyric acid; Succinic acid,Yes
+BPD_only_6M,hsa00020,Citrate cycle (TCA cycle),20,2,0.045151159707289314,0.25284649436082013,0.312,Citric acid; Succinic acid,Yes
+BPD_only_6M,hsa00630,Glyoxylate and dicarboxylate metabolism,20,2,0.045151159707289314,0.25284649436082013,0.174,Citric acid; Succinic acid,Yes
+BPD_only_6M,hsa00650,Butanoate metabolism,20,2,0.045151159707289314,0.25284649436082013,0.198,Glutamine; Succinic acid,Yes
+BPD_only_6M,hsa00250,"Alanine, aspartate and glutamate metabolism",24,2,0.06301662145310419,0.2940775667811529,0.271,Glutamine; N-Acetylaspartic acid,No
+BPD_only_6M,hsa00330,Arginine and proline metabolism,38,2,0.13963101423596147,0.5585240569438459,0.256,Glutamine; Methylguanidine,No
+BPD_only_6M,hsa00300,Lysine biosynthesis,11,1,0.17752711288232642,0.6213448950881425,0.089,Lysine,No
+BPD_only_6M,hsa00470,D-Amino acid metabolism,20,1,0.3005071055353302,0.759284372584037,0.098,N-Acetylaspartic acid,No
+BPD_only_6M,hsa00030,Pentose phosphate pathway,22,1,0.3254075882503016,0.759284372584037,0.185,Gluconic acid,No
+BPD_only_6M,hsa00410,beta-Alanine metabolism,22,1,0.3254075882503016,0.759284372584037,0.196,3-Aminoisobutyric acid,No
+BPD_only_6M,hsa00620,Pyruvate metabolism,22,1,0.3254075882503016,0.759284372584037,0.209,Acetic acid,No
+BPD_only_6M,hsa00310,Lysine degradation,25,1,0.3612190109712713,0.7780101774765843,0.19,Lysine,No
+BPD_only_6M,hsa00010,Glycolysis / Gluconeogenesis,28,1,0.39525839207468194,0.7905167841493639,0.204,Acetic acid,No
+BPD_only_6M,hsa00270,Cysteine and methionine metabolism,33,1,0.4482719488669508,0.8367743045516416,0.221,2-Aminobutyric acid,No
+BPD_only_6M,hsa00260,"Glycine, serine and threonine metabolism",27,0,1.0,1.0,0.234,,No
+BPD_only_6M,hsa00290,"Valine, leucine and isoleucine biosynthesis",13,0,1.0,1.0,0.145,,No
+BPD_only_6M,hsa00350,Tyrosine metabolism,42,0,1.0,1.0,0.36,,No
+BPD_only_6M,hsa00360,Phenylalanine metabolism,17,0,1.0,1.0,0.186,,No
+BPD_only_6M,hsa00380,Tryptophan metabolism,41,0,1.0,1.0,0.282,,No
+BPD_only_6M,hsa00400,"Phenylalanine, tyrosine and tryptophan biosynthesis",17,0,1.0,1.0,0.131,,No
+BPD_only_6M,hsa00430,Taurine and hypotaurine metabolism,10,0,1.0,1.0,0.237,,No
+BPD_only_6M,hsa00480,Glutathione metabolism,28,0,1.0,1.0,0.183,,No
+BPD_only_6M,hsa00500,Starch and sucrose metabolism,25,0,1.0,1.0,0.143,,No
+BPD_only_6M,hsa00670,One carbon pool by folate,12,0,1.0,1.0,0.148,,No
+BPD_only_6M,hsa00760,Nicotinate and nicotinamide metabolism,22,0,1.0,1.0,0.217,,No
+BPD_only_6M,hsa00770,Pantothenate and CoA biosynthesis,15,0,1.0,1.0,0.162,,No
+BPD_only_6M,hsa01210,2-Oxocarboxylic acid metabolism,25,0,1.0,1.0,0.189,,No
+Both_GA_BPD_2Y,hsa00630,Glyoxylate and dicarboxylate metabolism,20,2,0.01925420188822017,0.2695588264350824,0.174,Glycine; Succinic acid,Yes
+Both_GA_BPD_2Y,hsa00650,Butanoate metabolism,20,2,0.01925420188822017,0.2695588264350824,0.198,Glutamine; Succinic acid,Yes
+Both_GA_BPD_2Y,hsa00280,"Valine, leucine and isoleucine degradation",40,2,0.07025625988306033,0.5142870505051061,0.298,3-Methyl-2-oxopentanoic acid; Succinic acid,No
+Both_GA_BPD_2Y,hsa00670,One carbon pool by folate,12,1,0.12777943886297777,0.5142870505051061,0.148,Glycine,No
+Both_GA_BPD_2Y,hsa00290,"Valine, leucine and isoleucine biosynthesis",13,1,0.1377413488252027,0.5142870505051061,0.145,3-Methyl-2-oxopentanoic acid,No
+Both_GA_BPD_2Y,hsa00770,Pantothenate and CoA biosynthesis,15,1,0.1573622766471187,0.5142870505051061,0.162,Pantothenic acid,No
+Both_GA_BPD_2Y,hsa00360,Phenylalanine metabolism,17,1,0.17658532623095216,0.5142870505051061,0.186,Phenylacetylglycine,No
+Both_GA_BPD_2Y,hsa00640,Propanoate metabolism,18,1,0.1860498627110561,0.5142870505051061,0.208,Succinic acid,No
+Both_GA_BPD_2Y,hsa00020,Citrate cycle (TCA cycle),20,1,0.2046893317833046,0.5142870505051061,0.312,Succinic acid,No
+Both_GA_BPD_2Y,hsa00410,beta-Alanine metabolism,22,1,0.2229484144692314,0.5142870505051061,0.196,Pantothenic acid,No
+Both_GA_BPD_2Y,hsa00250,"Alanine, aspartate and glutamate metabolism",24,1,0.24083392058674735,0.5142870505051061,0.271,Glutamine,No
+Both_GA_BPD_2Y,hsa00500,Starch and sucrose metabolism,25,1,0.2496386818170558,0.5142870505051061,0.143,Sucrose,No
+Both_GA_BPD_2Y,hsa01210,2-Oxocarboxylic acid metabolism,25,1,0.2496386818170558,0.5142870505051061,0.189,3-Methyl-2-oxopentanoic acid,No
+Both_GA_BPD_2Y,hsa00260,"Glycine, serine and threonine metabolism",27,1,0.2669763626872993,0.5142870505051061,0.234,Glycine,No
+Both_GA_BPD_2Y,hsa00480,Glutathione metabolism,28,1,0.2755109199134497,0.5142870505051061,0.183,Glycine,No
+Both_GA_BPD_2Y,hsa00330,Arginine and proline metabolism,38,1,0.3561226801349861,0.6232146902362257,0.256,Glutamine,No
+Both_GA_BPD_2Y,hsa00380,Tryptophan metabolism,41,1,0.37869812959281296,0.6237380957999272,0.282,Indoxyl sulfate,No
+Both_GA_BPD_2Y,hsa00010,Glycolysis / Gluconeogenesis,28,0,1.0,1.0,0.204,,No
+Both_GA_BPD_2Y,hsa00030,Pentose phosphate pathway,22,0,1.0,1.0,0.185,,No
+Both_GA_BPD_2Y,hsa00270,Cysteine and methionine metabolism,33,0,1.0,1.0,0.221,,No
+Both_GA_BPD_2Y,hsa00300,Lysine biosynthesis,11,0,1.0,1.0,0.089,,No
+Both_GA_BPD_2Y,hsa00310,Lysine degradation,25,0,1.0,1.0,0.19,,No
+Both_GA_BPD_2Y,hsa00350,Tyrosine metabolism,42,0,1.0,1.0,0.36,,No
+Both_GA_BPD_2Y,hsa00400,"Phenylalanine, tyrosine and tryptophan biosynthesis",17,0,1.0,1.0,0.131,,No
+Both_GA_BPD_2Y,hsa00430,Taurine and hypotaurine metabolism,10,0,1.0,1.0,0.237,,No
+Both_GA_BPD_2Y,hsa00470,D-Amino acid metabolism,20,0,1.0,1.0,0.098,,No
+Both_GA_BPD_2Y,hsa00620,Pyruvate metabolism,22,0,1.0,1.0,0.209,,No
+Both_GA_BPD_2Y,hsa00760,Nicotinate and nicotinamide metabolism,22,0,1.0,1.0,0.217,,No
+Both_GA_BPD_6M,hsa00360,Phenylalanine metabolism,17,4,0.0002182922698678208,0.006112183556298983,0.186,4-Hydroxyphenylacetic acid; Hippuric acid; Phenylacetylglycine; Tyrosine,Yes
+Both_GA_BPD_6M,hsa00290,"Valine, leucine and isoleucine biosynthesis",13,2,0.025741060078810354,0.3159428950505257,0.145,3-Methyl-2-oxopentanoic acid; Valine,Yes
+Both_GA_BPD_6M,hsa00770,Pantothenate and CoA biosynthesis,15,2,0.03385102446969918,0.3159428950505257,0.162,Pantothenic acid; Valine,Yes
+Both_GA_BPD_6M,hsa00760,Nicotinate and nicotinamide metabolism,22,2,0.06864022969952172,0.480481607896652,0.217,1-Methylnicotinamide; Trigonelline,No
+Both_GA_BPD_6M,hsa00280,"Valine, leucine and isoleucine degradation",40,2,0.18829839569735593,0.9480304739840527,0.298,3-Methyl-2-oxopentanoic acid; Valine,No
+Both_GA_BPD_6M,hsa00350,Tyrosine metabolism,42,2,0.203149387282297,0.9480304739840527,0.36,4-Hydroxyphenylacetic acid; Tyrosine,No
+Both_GA_BPD_6M,hsa00400,"Phenylalanine, tyrosine and tryptophan biosynthesis",17,1,0.2931694865133576,1.0,0.131,Tyrosine,No
+Both_GA_BPD_6M,hsa00410,beta-Alanine metabolism,22,1,0.36266591503204937,1.0,0.196,Pantothenic acid,No
+Both_GA_BPD_6M,hsa00500,Starch and sucrose metabolism,25,1,0.40123276314053974,1.0,0.143,Sucrose,No
+Both_GA_BPD_6M,hsa01210,2-Oxocarboxylic acid metabolism,25,1,0.40123276314053974,1.0,0.189,3-Methyl-2-oxopentanoic acid,No
+Both_GA_BPD_6M,hsa00260,"Glycine, serine and threonine metabolism",27,1,0.42571648871474804,1.0,0.234,"N,N-Dimethylglycine",No
+Both_GA_BPD_6M,hsa00330,Arginine and proline metabolism,38,1,0.5444380622465657,1.0,0.256,Creatine,No
+Both_GA_BPD_6M,hsa00380,Tryptophan metabolism,41,1,0.5725727102100802,1.0,0.282,Indoxyl sulfate,No
+Both_GA_BPD_6M,hsa00010,Glycolysis / Gluconeogenesis,28,0,1.0,1.0,0.204,,No
+Both_GA_BPD_6M,hsa00020,Citrate cycle (TCA cycle),20,0,1.0,1.0,0.312,,No
+Both_GA_BPD_6M,hsa00030,Pentose phosphate pathway,22,0,1.0,1.0,0.185,,No
+Both_GA_BPD_6M,hsa00250,"Alanine, aspartate and glutamate metabolism",24,0,1.0,1.0,0.271,,No
+Both_GA_BPD_6M,hsa00270,Cysteine and methionine metabolism,33,0,1.0,1.0,0.221,,No
+Both_GA_BPD_6M,hsa00300,Lysine biosynthesis,11,0,1.0,1.0,0.089,,No
+Both_GA_BPD_6M,hsa00310,Lysine degradation,25,0,1.0,1.0,0.19,,No
+Both_GA_BPD_6M,hsa00430,Taurine and hypotaurine metabolism,10,0,1.0,1.0,0.237,,No
+Both_GA_BPD_6M,hsa00470,D-Amino acid metabolism,20,0,1.0,1.0,0.098,,No
+Both_GA_BPD_6M,hsa00480,Glutathione metabolism,28,0,1.0,1.0,0.183,,No
+Both_GA_BPD_6M,hsa00620,Pyruvate metabolism,22,0,1.0,1.0,0.209,,No
+Both_GA_BPD_6M,hsa00630,Glyoxylate and dicarboxylate metabolism,20,0,1.0,1.0,0.174,,No
+Both_GA_BPD_6M,hsa00640,Propanoate metabolism,18,0,1.0,1.0,0.208,,No
+Both_GA_BPD_6M,hsa00650,Butanoate metabolism,20,0,1.0,1.0,0.198,,No
+Both_GA_BPD_6M,hsa00670,One carbon pool by folate,12,0,1.0,1.0,0.148,,No
+GA_only_2Y,hsa00360,Phenylalanine metabolism,17,2,0.014027332570740098,0.32389209465847413,0.186,4-Hydroxyphenylacetic acid; Tyrosine,Yes
+GA_only_2Y,hsa00620,Pyruvate metabolism,22,2,0.023135149618462435,0.32389209465847413,0.209,Alanine; Lactic acid,Yes
+GA_only_2Y,hsa00270,Cysteine and methionine metabolism,33,2,0.049562513598493285,0.462583460252604,0.221,Alanine; Taurine,Yes
+GA_only_2Y,hsa00350,Tyrosine metabolism,42,2,0.07664227955295524,0.5364959568706867,0.36,4-Hydroxyphenylacetic acid; Tyrosine,No
+GA_only_2Y,hsa00430,Taurine and hypotaurine metabolism,10,1,0.10754818286497046,0.5376833146828894,0.237,Taurine,No
+GA_only_2Y,hsa00670,One carbon pool by folate,12,1,0.12777943886297777,0.5376833146828894,0.148,Formic acid,No
+GA_only_2Y,hsa00400,"Phenylalanine, tyrosine and tryptophan biosynthesis",17,1,0.17658532623095216,0.5376833146828894,0.131,Tyrosine,No
+GA_only_2Y,hsa00630,Glyoxylate and dicarboxylate metabolism,20,1,0.2046893317833046,0.5376833146828894,0.174,Formic acid,No
+GA_only_2Y,hsa00030,Pentose phosphate pathway,22,1,0.2229484144692314,0.5376833146828894,0.185,Gluconic acid,No
+GA_only_2Y,hsa00410,beta-Alanine metabolism,22,1,0.2229484144692314,0.5376833146828894,0.196,Alanine,No
+GA_only_2Y,hsa00760,Nicotinate and nicotinamide metabolism,22,1,0.2229484144692314,0.5376833146828894,0.217,1-Methylnicotinamide,No
+GA_only_2Y,hsa00250,"Alanine, aspartate and glutamate metabolism",24,1,0.24083392058674735,0.5376833146828894,0.271,Alanine,No
+GA_only_2Y,hsa00310,Lysine degradation,25,1,0.2496386818170558,0.5376833146828894,0.19,N6-Acetyl-L-lysine,No
+GA_only_2Y,hsa00010,Glycolysis / Gluconeogenesis,28,1,0.2755109199134497,0.5510218398268995,0.204,Lactic acid,No
+GA_only_2Y,hsa00380,Tryptophan metabolism,41,1,0.37869812959281296,0.7069031752399175,0.282,Formic acid,No
+GA_only_2Y,hsa00020,Citrate cycle (TCA cycle),20,0,1.0,1.0,0.312,,No
+GA_only_2Y,hsa00260,"Glycine, serine and threonine metabolism",27,0,1.0,1.0,0.234,,No
+GA_only_2Y,hsa00280,"Valine, leucine and isoleucine degradation",40,0,1.0,1.0,0.298,,No
+GA_only_2Y,hsa00290,"Valine, leucine and isoleucine biosynthesis",13,0,1.0,1.0,0.145,,No
+GA_only_2Y,hsa00300,Lysine biosynthesis,11,0,1.0,1.0,0.089,,No
+GA_only_2Y,hsa00330,Arginine and proline metabolism,38,0,1.0,1.0,0.256,,No
+GA_only_2Y,hsa00470,D-Amino acid metabolism,20,0,1.0,1.0,0.098,,No
+GA_only_2Y,hsa00480,Glutathione metabolism,28,0,1.0,1.0,0.183,,No
+GA_only_2Y,hsa00500,Starch and sucrose metabolism,25,0,1.0,1.0,0.143,,No
+GA_only_2Y,hsa00640,Propanoate metabolism,18,0,1.0,1.0,0.208,,No
+GA_only_2Y,hsa00650,Butanoate metabolism,20,0,1.0,1.0,0.198,,No
+GA_only_2Y,hsa00770,Pantothenate and CoA biosynthesis,15,0,1.0,1.0,0.162,,No
+GA_only_2Y,hsa01210,2-Oxocarboxylic acid metabolism,25,0,1.0,1.0,0.189,,No

@@ -64,4 +64,9 @@ mtext("Mfuzz log2-FC (std, Crea-norm) - FC_BPD_std_Crea  (k=3, m=8.14, n=37)",
       side = 3, line = -1.5, outer = TRUE, cex = 1.1, font = 2)
 dev.off()
 
-cat("\nDone -> mfuzz_FC_BPD_std_Crea_red.pdf\n")
+memb <- cl$membership
+colnames(memb) <- paste0("Cluster_", seq_len(ncol(memb)))
+out <- data.frame(Metabolite = rownames(M), HardCluster = cl$cluster, memb, M, check.names = FALSE)
+write.csv(out, "mfuzz_FC_BPD_std_Crea_membership.csv", row.names = FALSE, fileEncoding = "UTF-8")
+
+cat("\nDone -> mfuzz_FC_BPD_std_Crea_red.pdf + mfuzz_FC_BPD_std_Crea_membership.csv\n")

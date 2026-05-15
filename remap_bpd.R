@@ -34,21 +34,7 @@ if (!is.finite(m_val) || m_val < 1.05) m_val <- 1.25
 k_use <- 3
 cl <- mfuzz(eset_s, c = k_use, m = m_val)
 
-cat("Original cluster assignments:\n")
-for (i in 1:3) {
-  members <- names(cl$cluster[cl$cluster == i])
-  cat(sprintf("  Cluster %d (%d): %s\n", i, length(members), paste(members, collapse=", ")))
-}
-
-# Remap: C1->C1, C2->C3, C3->C2 (net effect of original + C1/C2 swap)
-remap <- c("1"=1L, "2"=3L, "3"=2L)
-old_names <- names(cl$cluster)
-cl$cluster <- remap[as.character(cl$cluster)]
-names(cl$cluster) <- old_names
-cl$centers    <- cl$centers[c(1,3,2), ]
-cl$membership <- cl$membership[, c(1,3,2)]
-
-cat("\nRemapped cluster assignments:\n")
+cat("Cluster assignments (original, no remap):\n")
 for (i in 1:3) {
   members <- names(cl$cluster[cl$cluster == i])
   cat(sprintf("  Cluster %d (%d): %s\n", i, length(members), paste(members, collapse=", ")))
@@ -60,7 +46,7 @@ par(pty = "s")
 mfuzz.plot2(eset_s, cl = cl, mfrow = c(nr, nc), time.labels = colnames(M),
             centre = TRUE, centre.col = "darkred", centre.lwd = 2.5,
             x11 = FALSE, ylab = "Standardised log2-FC")
-mtext("Mfuzz log2-FC (std, Crea-norm) - FC_BPD_std_Crea  (k=3, m=8.14, n=37)",
+mtext(sprintf("Mfuzz log2-FC (std, Crea-norm) - FC_BPD_std_Crea  (k=3, m=%.2f, n=%d)", m_val, nrow(M)),
       side = 3, line = -1.5, outer = TRUE, cex = 1.1, font = 2)
 dev.off()
 

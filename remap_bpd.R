@@ -34,7 +34,21 @@ if (!is.finite(m_val) || m_val < 1.05) m_val <- 1.25
 k_use <- 3
 cl <- mfuzz(eset_s, c = k_use, m = m_val)
 
-cat("Cluster assignments (original, no remap):\n")
+cat("Original cluster assignments:\n")
+for (i in 1:3) {
+  members <- names(cl$cluster[cl$cluster == i])
+  cat(sprintf("  Cluster %d (%d): %s\n", i, length(members), paste(members, collapse=", ")))
+}
+
+# Remap: swap C2 and C3
+remap <- c("1"=1L, "2"=3L, "3"=2L)
+old_names <- names(cl$cluster)
+cl$cluster <- remap[as.character(cl$cluster)]
+names(cl$cluster) <- old_names
+cl$centers    <- cl$centers[c(1,3,2), ]
+cl$membership <- cl$membership[, c(1,3,2)]
+
+cat("\nRemapped cluster assignments (C2<->C3):\n")
 for (i in 1:3) {
   members <- names(cl$cluster[cl$cluster == i])
   cat(sprintf("  Cluster %d (%d): %s\n", i, length(members), paste(members, collapse=", ")))

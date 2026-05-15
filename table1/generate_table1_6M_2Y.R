@@ -10,7 +10,7 @@
 #  Data sources:
 #      6M : Blood_Urine sheet.  2Y : 收案名單 sheet.
 #      Body weight / height / BMI use PERCENTILE columns.
-#      6M BMI percentile is unavailable; cell shows "-".
+#      6M BMI percentile computed from WHO LMS parameters (0-24 months).
 #
 #  Header layout:
 #      Char | --- 6M subgroups --- | P | --- 2Y subgroups --- | P
@@ -47,6 +47,55 @@ sl <- read_excel(fsl, sheet = 1, .name_repair = "minimal")
 sl_6m <- na.omit(as.character(sl$`6m`))
 sl_2y <- na.omit(as.character(sl$`2y`))
 
+# ------------------------------------------------------------------ WHO LMS
+# BMI-for-age LMS parameters (WHO Child Growth Standards, 0-24 months).
+# Used to compute 6M BMI percentile which is absent from the source file.
+who_bmi_lms <- data.frame(
+  month = rep(0:24, 2),
+  sex   = rep(c(1L, 0L), each = 25),   # 1 = male, 0 = female
+  L = c(# boys
+        -0.3053, 0.2560, 0.2313,-0.0590,-0.4019,-0.6996,-0.9200,-1.0698,
+        -1.1661,-1.2236,-1.2541,-1.2667,-1.2667,-1.2581,-1.2430,-1.2231,
+        -1.1998,-1.1738,-1.1458,-1.1161,-1.0850,-1.0529,-1.0199,-0.9863,-0.9524,
+        # girls
+        -0.0631, 0.3711, 0.2024,-0.1530,-0.4840,-0.7341,-0.9009,-1.0046,
+        -1.0639,-1.0935,-1.1017,-1.0947,-1.0773,-1.0531,-1.0247,-0.9937,
+        -0.9612,-0.9280,-0.8942,-0.8604,-0.8266,-0.7930,-0.7599,-0.7274,-0.6955),
+  M = c(# boys
+        13.4069,14.8590,16.4459,17.2485,17.5625,17.5949,17.4375,17.1863,
+        16.9131,16.6461,16.4000,16.1778,15.9756,15.7896,15.6185,15.4621,
+        15.3199,15.1903,15.0713,14.9641,14.8684,14.7835,14.7073,14.6370,14.5780,
+        # girls
+        13.3363,14.5679,15.9859,16.6853,16.9529,16.9491,16.7982,16.5860,
+        16.3574,16.1335,15.9229,15.7275,15.5471,15.3800,15.2253,15.0828,
+        14.9519,14.8322,14.7234,14.6241,14.5358,14.4558,14.3820,14.3139,14.2504),
+  S = c(# boys
+        0.09530,0.08573,0.08251,0.08051,0.07902,0.07813,0.07768,0.07756,
+        0.07768,0.07797,0.07838,0.07890,0.07949,0.08016,0.08090,0.08170,
+        0.08257,0.08349,0.08447,0.08548,0.08654,0.08762,0.08873,0.08987,0.09103,
+        # girls
+        0.09300,0.08597,0.08372,0.08218,0.08106,0.08042,0.08016,0.08019,
+        0.08042,0.08082,0.08133,0.08195,0.08268,0.08350,0.08442,0.08542,
+        0.08649,0.08764,0.08884,0.09010,0.09140,0.09275,0.09413,0.09555,0.09699)
+)
+
+bmi_to_percentile <- function(bmi, age_months, sex_male) {
+  n <- length(bmi)
+  out <- rep(NA_real_, n)
+  for (i in seq_len(n)) {
+    b <- bmi[i]; a <- age_months[i]; s <- sex_male[i]
+    if (any(is.na(c(b, a, s))) || a < 0 || a > 24) next
+    sub <- who_bmi_lms[who_bmi_lms$sex == s, ]
+    # linear interpolation of L, M, S
+    L <- approx(sub$month, sub$L, xout = a, rule = 2)$y
+    M <- approx(sub$month, sub$M, xout = a, rule = 2)$y
+    S <- approx(sub$month, sub$S, xout = a, rule = 2)$y
+    z <- if (abs(L) > 0.001) ((b / M)^L - 1) / (L * S) else log(b / M) / S
+    out[i] <- pnorm(z) * 100
+  }
+  out
+}
+
 # ------------------------------------------------------------------ 6M tidy
 d6 <- data.frame(
   case_no      = as.character(raw6$`case no.`),
@@ -58,14 +107,15 @@ d6 <- data.frame(
   age_mo       = suppressWarnings(as.numeric(raw6$`右邊BW/BH/BMI 測量CA(月份)`)),
   Wt_pct       = suppressWarnings(as.numeric(raw6[[29]])),   # Wt (kg) percentile
   Ht_pct       = suppressWarnings(as.numeric(raw6[[31]])),   # Ht (cm) percentile
-  BMI_pct      = NA_real_,                                   # no 6M BMI percentile
+  BMI_raw      = suppressWarnings(as.numeric(raw6[[32]])),   # raw BMI for percentile calc
   BF_raw       = suppressWarnings(as.numeric(raw6[[54]])),
   Sepsis_raw   = suppressWarnings(as.numeric(raw6[[41]])),
   check.names  = FALSE
 )
 d6$BF_ge6      <- ifelse(is.na(d6$BF_raw), NA_integer_, ifelse(d6$BF_raw == 2, 1L, 0L))
 d6$Sepsis_ever <- ifelse(is.na(d6$Sepsis_raw), NA_integer_, ifelse(d6$Sepsis_raw >= 1, 1L, 0L))
-d6$BF_raw <- NULL; d6$Sepsis_raw <- NULL
+d6$BMI_pct     <- bmi_to_percentile(d6$BMI_raw, d6$age_mo, d6$sex_male)
+d6$BF_raw <- NULL; d6$Sepsis_raw <- NULL; d6$BMI_raw <- NULL
 
 # ------------------------------------------------------------------ 2Y tidy
 sepsis_raw <- as.character(rawS$`Sepsis, ever`)
@@ -271,7 +321,7 @@ build_table_docx <- function(group_var, group_levels, group_labels,
     "GA, gestational age; BPD, bronchopulmonary dysplasia; HC, healthy controls;",
     "No+Mild BPD, no and mild BPD; M+S BPD, moderate and severe BPD;",
     "wk, week; g, gram; BMI, body mass index.",
-    "6M BMI percentile was not available.",
+    "6M BMI percentile was computed from WHO Child Growth Standards LMS parameters.",
     "All P-values < 0.05, which is in bold, are significant.")
 
   # landscape page

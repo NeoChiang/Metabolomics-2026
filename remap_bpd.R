@@ -40,13 +40,13 @@ for (i in 1:3) {
   cat(sprintf("  Cluster %d (%d): %s\n", i, length(members), paste(members, collapse=", ")))
 }
 
-# Remap: C1->C2, C2->C3, C3->C1
-remap <- c("1"=2L, "2"=3L, "3"=1L)
+# Remap: C1->C1, C2->C3, C3->C2 (net effect of original + C1/C2 swap)
+remap <- c("1"=1L, "2"=3L, "3"=2L)
 old_names <- names(cl$cluster)
 cl$cluster <- remap[as.character(cl$cluster)]
 names(cl$cluster) <- old_names
-cl$centers    <- cl$centers[c(3,1,2), ]
-cl$membership <- cl$membership[, c(3,1,2)]
+cl$centers    <- cl$centers[c(1,3,2), ]
+cl$membership <- cl$membership[, c(1,3,2)]
 
 cat("\nRemapped cluster assignments:\n")
 for (i in 1:3) {

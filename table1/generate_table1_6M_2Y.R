@@ -114,7 +114,7 @@ d6 <- data.frame(
 )
 d6$BF_ge6      <- ifelse(is.na(d6$BF_raw), NA_integer_, ifelse(d6$BF_raw == 2, 1L, 0L))
 d6$Sepsis_ever <- ifelse(is.na(d6$Sepsis_raw), NA_integer_, ifelse(d6$Sepsis_raw >= 1, 1L, 0L))
-d6$BMI_pct     <- round(bmi_to_percentile(d6$BMI_raw, d6$age_mo, d6$sex_male))
+d6$BMI_pct     <- round(bmi_to_percentile(d6$BMI_raw, d6$age_mo, d6$sex_male), 1)
 d6$BF_raw <- NULL; d6$Sepsis_raw <- NULL; d6$BMI_raw <- NULL
 
 # ------------------------------------------------------------------ 2Y tidy

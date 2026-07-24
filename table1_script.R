@@ -54,18 +54,20 @@ tab_df <- as.data.frame(tab_mat, stringsAsFactors = FALSE)
 tab_df <- cbind(Variable = rownames(tab_df), tab_df)
 rownames(tab_df) <- NULL
 
+tab_df$test <- NULL
+
 var_labels <- c(
   "n" = "n",
-  "Analysis_cell_type (%)" = "Analysis cell type, n (%)",
-  "age (mean (SD))" = "Age, years (mean +/- SD)",
+  "Analysis_cell_type (%)" = "Cell type, n (%)",
+  "age (mean (SD))" = "Age, years",
   "Recur (%)" = "Recurrence, n (%)",
   "Death (%)" = "Death, n (%)",
-  "BH (mean (SD))" = "Body height, cm (mean +/- SD)",
-  "BW (mean (SD))" = "Body weight, kg (mean +/- SD)",
-  "BMI (mean (SD))" = "BMI, kg/m2 (mean +/- SD)",
-  "CA-125 (median [IQR])" = "CA-125, U/mL (median [IQR])",
-  "WBC (median [IQR])" = "WBC, 10^3/uL (median [IQR])",
-  "MM_numeric (median [IQR])" = "Myometrial invasion, % (median [IQR])",
+  "BH (mean (SD))" = "Body height, cm",
+  "BW (mean (SD))" = "Body weight, kg",
+  "BMI (mean (SD))" = "BMI, kg/m²",
+  "CA-125 (median [IQR])" = "CA-125, U/mL",
+  "WBC (median [IQR])" = "WBC, 10³/µL",
+  "MM_numeric (median [IQR])" = "MI, %",
   "cx (%)" = "Cervical invasion, n (%)",
   "adnexa (%)" = "Adnexal involvement, n (%)",
   "PLN (%)" = "Pelvic LN metastasis, n (%)",
@@ -83,9 +85,22 @@ for (i in seq_len(nrow(tab_df))) {
 ft <- flextable(tab_df)
 ft <- set_header_labels(ft, Variable = "", level = "")
 ft <- theme_booktabs(ft)
-ft <- autofit(ft)
-ft <- fontsize(ft, size = 9, part = "all")
+
+ft <- fontsize(ft, size = 8, part = "all")
 ft <- font(ft, fontname = "Times New Roman", part = "all")
+ft <- padding(ft, padding.top = 1, padding.bottom = 1,
+              padding.left = 2, padding.right = 2, part = "all")
+
+ft <- width(ft, j = 1, width = 1.8)
+ft <- width(ft, j = 2, width = 0.5)
+ft <- width(ft, j = 3, width = 1.1)
+ft <- width(ft, j = 4, width = 1.1)
+ft <- width(ft, j = 5, width = 1.1)
+ft <- width(ft, j = 6, width = 1.1)
+ft <- width(ft, j = 7, width = 0.55)
+
+ft <- set_table_properties(ft, layout = "fixed", width = 1)
+
 ft <- bold(ft, part = "header")
 ft <- align(ft, align = "center", part = "header")
 ft <- align(ft, j = 1, align = "left", part = "body")
@@ -115,6 +130,7 @@ ft <- hline_bottom(ft, border = fp_border(color = "black", width = 1.5), part = 
 output_path <- "/home/user/Metabolomics-2026/Table_1_output.docx"
 
 doc <- read_docx()
+doc <- body_end_section_portrait(doc)
 
 doc <- body_add_par(doc,
   "Table 1. Comparisons of the demographic and clinical characteristics among groups.",
@@ -127,7 +143,7 @@ doc <- body_add_par(doc,
   paste0(
     "Data shown are mean ± SD, median [IQR], or number (%) of patients as appropriate. ",
     "BMI, body mass index; CA-125, cancer antigen 125; WBC, white blood cell count; ",
-    "LN, lymph node. ",
+    "MI, myometrial invasion; LN, lymph node. ",
     "P-values < 0.05 (shown in bold) are considered statistically significant. ",
     "Fisher's exact test was used for categorical variables."
   ),

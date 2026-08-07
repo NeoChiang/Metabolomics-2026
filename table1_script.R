@@ -1,16 +1,17 @@
-library(readxl)
 library(tableone)
 library(flextable)
 library(officer)
 
-data <- readxl::read_xlsx("/root/.claude/uploads/198cd9dc-2f6a-5bf0-938e-bad68ab2e4eb/b20d6ef8-123_Table_1_______.xlsx")
+data <- read.csv("/home/user/Metabolomics-2026/table1.csv",
+                 stringsAsFactors = FALSE, strip.white = TRUE,
+                 check.names = FALSE)
 
-colnames(data) <- gsub("[\r\n]", "", colnames(data))
-colnames(data) <- trimws(colnames(data))
-colnames(data)[grepl("cell.type", colnames(data), ignore.case = TRUE)] <- "Analysis_cell_type"
+colnames(data) <- gsub("[\\r\\n\\s]+", "", colnames(data), perl = TRUE)
+colnames(data)[grepl("cell", colnames(data), ignore.case = TRUE)] <- "Analysis_cell_type"
 
-data$group <- factor(data$group, levels = c(1, 2, 3),
-                     labels = c("Group 1", "Group 2", "Group 3"))
+data$group <- factor(data$group, levels = c(12, 3),
+                     labels = c("Group 1+2", "Group 3"))
+
 data$Recur <- factor(data$Recur, levels = c(0, 1), labels = c("No", "Yes"))
 data$Death <- factor(data$Death, levels = c(0, 1), labels = c("No", "Yes"))
 data$Analysis_cell_type <- factor(data$Analysis_cell_type,
@@ -22,17 +23,16 @@ data$PLN <- factor(data$PLN, levels = c(0, 1), labels = c("No", "Yes"))
 data$PALN <- factor(data$PALN, levels = c(0, 1), labels = c("No", "Yes"))
 data$omentum <- factor(data$omentum, levels = c(0, 1), labels = c("No", "Yes"))
 
-mm_clean <- suppressWarnings(as.numeric(as.character(data$MM)))
-data$MM_numeric <- mm_clean
+data$MM <- as.numeric(data$MM)
 
 vars <- c("Analysis_cell_type", "age", "Recur", "Death",
-          "BH", "BW", "BMI", "CA-125", "WBC", "MM_numeric",
+          "BH", "BW", "BMI", "CA-125", "WBC", "MM",
           "cx", "adnexa", "PLN", "PALN", "omentum")
 
 catVars <- c("Analysis_cell_type", "Recur", "Death",
              "cx", "adnexa", "PLN", "PALN", "omentum")
 
-nonnormal_vars <- c("CA-125", "WBC", "MM_numeric")
+nonnormal_vars <- c("CA-125", "WBC", "MM")
 
 tab <- CreateTableOne(vars = vars,
                       strata = "group",
@@ -67,7 +67,7 @@ var_labels <- c(
   "BMI (mean (SD))" = "BMI, kg/m²",
   "CA-125 (median [IQR])" = "CA-125, U/mL",
   "WBC (median [IQR])" = "WBC, 10³/µL",
-  "MM_numeric (median [IQR])" = "MI, %",
+  "MM (median [IQR])" = "MI, %",
   "cx (%)" = "Cervical invasion, n (%)",
   "adnexa (%)" = "Adnexal involvement, n (%)",
   "PLN (%)" = "Pelvic LN metastasis, n (%)",
@@ -86,18 +86,17 @@ ft <- flextable(tab_df)
 ft <- set_header_labels(ft, Variable = "", level = "")
 ft <- theme_booktabs(ft)
 
-ft <- fontsize(ft, size = 8, part = "all")
+ft <- fontsize(ft, size = 9, part = "all")
 ft <- font(ft, fontname = "Times New Roman", part = "all")
 ft <- padding(ft, padding.top = 1, padding.bottom = 1,
-              padding.left = 2, padding.right = 2, part = "all")
+              padding.left = 3, padding.right = 3, part = "all")
 
-ft <- width(ft, j = 1, width = 1.8)
+ft <- width(ft, j = 1, width = 1.7)
 ft <- width(ft, j = 2, width = 0.5)
-ft <- width(ft, j = 3, width = 1.1)
-ft <- width(ft, j = 4, width = 1.1)
-ft <- width(ft, j = 5, width = 1.1)
-ft <- width(ft, j = 6, width = 1.1)
-ft <- width(ft, j = 7, width = 0.55)
+ft <- width(ft, j = 3, width = 1.25)
+ft <- width(ft, j = 4, width = 1.25)
+ft <- width(ft, j = 5, width = 1.25)
+ft <- width(ft, j = 6, width = 0.55)
 
 ft <- set_table_properties(ft, layout = "fixed", width = 1)
 
@@ -130,10 +129,9 @@ ft <- hline_bottom(ft, border = fp_border(color = "black", width = 1.5), part = 
 output_path <- "/home/user/Metabolomics-2026/Table_1_output.docx"
 
 doc <- read_docx()
-doc <- body_end_section_portrait(doc)
 
 doc <- body_add_par(doc,
-  "Table 1. Comparisons of the demographic and clinical characteristics among groups.",
+  "Table 1. Comparisons of the demographic and clinical characteristics between groups.",
   style = "Normal")
 
 doc <- body_add_flextable(doc, ft)
@@ -145,7 +143,7 @@ doc <- body_add_par(doc,
     "BMI, body mass index; CA-125, cancer antigen 125; WBC, white blood cell count; ",
     "MI, myometrial invasion; LN, lymph node. ",
     "P-values < 0.05 (shown in bold) are considered statistically significant. ",
-    "Fisher's exact test was used for categorical variables."
+    "Fisher’s exact test was used for categorical variables."
   ),
   style = "Normal")
 
